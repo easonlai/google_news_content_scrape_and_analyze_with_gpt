@@ -1,0 +1,1481 @@
+,Title,Media,Update,Timestamp,Description,Link,Image,Text
+0,"Large, creative AI models will transform lives and labour markets",The Economist,8 mins ago,2023-04-22 23:55:39.052920,"GPT-3 is able to process a maximum of 2,048 tokens at a time, which is around the length of a long article in The Economist. GPT-4, by contrast,...",https://www.economist.com/interactive/science-and-technology/2023/04/22/large-creative-ai-models-will-transform-how-we-live-and-work,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","Science & technology | Generative AI Large, creative AI models will transform lives and labour markets They bring enormous promise and peril. In the first of three special articles we explain how they work
+
+Image: George Wylesol
+
+S ince November 2022, when Open AI , the company which makes Chat GPT , first opened the chatbot to the public, there has been little else that the tech elite has wanted to talk about. As this article was being written, the founder of a London technology company messaged your correspondent unprompted to say that this kind of AI is âessentially all Iâm thinking about these daysâ. He says he is in the process of redesigning his company, valued at many hundreds of millions of dollars, around it. He is not alone.
+
+GPT embodies TSMC , a Taiwanese semiconductor firm that finds itself in the geopolitical crosshairs. GPT -4, the artificial neural network which powers Chat GPT , has aced exams that serve as gateways for people to enter careers in law and medicine in America. It can generate songs, poems and essays. Other âgenerative AI â models can churn out digital photos, drawings and animations. Chatembodies more knowledge than any human has ever known. It can converse cogently about mineral extraction in Papua New Guinea, or about, a Taiwanese semiconductor firm that finds itself in the geopolitical crosshairs.-4, the artificial neural network which powers Chat, has aced exams that serve as gateways for people to enter careers in law and medicine in America. It can generate songs, poems and essays. Other âgenerativeâ models can churn out digital photos, drawings and animations.
+
+AI models are being developed too quickly. GPT -4 is a type of generative AI called a large language model ( LLM ). Tech giants like Alphabet, Amazon and Nvidia have all trained their own LLM s, and given them names like P a LM , Megatron, Titan and Chinchilla. Running alongside this excitement is deep concern , inside the tech industry and beyond, that generativemodels are being developed too quickly.-4 is a type of generativecalled a large language model (). Tech giants like Alphabet, Amazon and Nvidia have all trained their owns, and given them names like, Megatron, Titan and Chinchilla.
+
+The lure grows greater
+
+The London tech boss says he is âincredibly nervous about the existential threatâ posed by AI , even as he pursues it, and is âspeaking with [other] founders about it dailyâ. Governments in America, Europe and China have all started mulling new regulations. Prominent voices are calling for the development of artificial intelligence to be paused, lest the software somehow run out of control and damage, or even destroy, human society. To calibrate how worried or excited you should be about this technology, it helps first to understand where it came from, how it works and what the limits are to its growth.
+
+The contemporary explosion of the capabilities of AI software began in the early 2010s, when a software technique called âdeep learningâ became popular. Using the magic mix of vast datasets and powerful computers running neural networks on Graphics Processing Units ( GPU s), deep learning dramatically improved computersâ abilities to recognise images, process audio and play games. By the late 2010s computers could do many of these tasks better than any human.
+
+But neural networks tended to be embedded in software with broader functionality, like email clients, and non-coders rarely interacted with these AI s directly. Those that did often described their experience in near-spiritual terms. Lee Sedol, one of the worldâs best players of Go, an ancient Chinese board game, retired from the game after Alphabetâs neural-net-based AlphaGo software crushed him in 2016. âEven if I become the number one,â he said, âthere is an entity that cannot be defeated.â
+
+By working in the most human of mediums, conversation, Chat GPT is now allowing the internet-using public to experience something similar, a kind of intellectual vertigo caused by software which has improved suddenly to the point where it can perform tasks that had been exclusively in the domain of human intelligence.
+
+Despite that feeling of magic, an LLM is, in reality, a giant exercise in statistics. Prompt Chat GPT to finish the sentence: âThe promise of large language models is that theyâ¦â and you will get an immediate response. How does it work?
+
+First, the language of the query is converted from words, which neural networks cannot handle, into a representative set of numbers (see graphic). GPT -3, which powered an earlier version of Chat GPT , does this by splitting text into chunks of characters, called tokens, which commonly occur together. These tokens can be words, like âloveâ or âareâ, affixes, like âdisâ or âisedâ, and punctuation, like â?â. GPT -3âs dictionary contains details of 50,257 tokens.
+
+Tokenisation Theââ 464 ââpromiseââ 6991 ââofââ 286 ââlargeââ 1588 ââlanguageââ 3303 ââmodelsââ 4981 ââisââ 318 ââthatââ 326 ââtheyââ 484
+
+GPT -3 is able to process a maximum of 2,048 tokens at a time, which is around the length of a long article in The Economist. GPT -4, by contrast, can handle inputs up to 32,000 tokens longâa novella. The more text the model can take in, the more context it can see, and the better its answers will be. There is a catchâthe required computation rises non-linearly with the length of the input, meaning slightly longer inputs need much more computing power.
+
+The tokens are then assigned the equivalent of definitions by placing them into a âmeaning spaceâ where words that have similar meanings are located in nearby areas.
+
+Embedding facsimile vocabulary language tongue model replica aptitude talent speech duplicate imitation potentiality ability representation potential capability massive lookalike promise capacity great vast huge enourmous big large facsimile vocabulary language tongue model replica aptitude talent speech duplicate imitation potentiality ability representation potential capability massive lookalike promise capacity great vast huge enourmous big large vocabulary language tongue aptitude talent speech potentiality ability potential capability promise capacity facsimile model replica duplicate imitation massive representation great vast huge lookalike enourmous big large
+
+The LLM then deploys its âattention networkâ to make connections between different parts of the prompt. Someone reading our prompt, âthe promise of large language models is that theyâ¦â, would know how English grammar works and understand the concepts behind the words in the sentence. It would be obvious to them which words relate to each otherâit is the model that is large, for example. An LLM , however, must learn these associations from scratch during its training phaseâover billions of training runs, its attention network slowly encodes the structure of the language it sees as numbers (called âweightsâ) within its neural network. If it understands language at all, an LLM only does so in a statistical, rather than a grammatical, way. It is much more like an abacus than it is like a mind.
+
+Once the prompt has been processed, the LLM initiates a response. At this point, for each of the tokens in the modelâs vocabulary, the attention network has produced a probability of that token being the most appropriate one to use next in the sentence it is generating. The token with the highest probability score is not always the one chosen for the responseâhow the LLM makes this choice depends on how creative the model has been told to be by its operators.
+
+The LLM generates a word and then feeds the result back into itself. The first word is generated based on the prompt alone. The second word is generated by including the first word in the response, then the third word by including the first two generated words, and so on. This processâcalled autoregressionârepeats until the LLM has finished
+
+Although it is possible to write down the rules for how they work, LLM sâ outputs are not entirely predictable; it turns out that these extremely big abacuses can do things which smaller ones cannot, in ways which surprise even the people who make them. Jason Wei, a researcher at Open AI , has counted 137 so-called âemergentâ abilities across a variety of different LLM s.
+
+The abilities that emerge are not magicâthey are all represented in some form within the LLM sâ training data (or the prompts they are given) but they do not become apparent until the LLM s cross a certain, very large, threshold in their size. At one size, an LLM does not know how to write gender-inclusive sentences in German any better than if it was doing so at random. Make the model just a little bigger, however, and all of a sudden a new ability pops out. GPT -4 passed the American Uniform Bar Examination, designed to test the skills of lawyers before they become licensed, in the 90th percentile. The slightly smaller GPT -3.5 flunked it.
+
+Emergent abilities are exciting, because they hint at the untapped potential of LLM s. Jonas Degrave, an engineer at DeepMind, an AI research company owned by Alphabet, has shown that Chat GPT can be convinced to act like the command line terminal of a computer, appearing to compile and run programs accurately. Just a little bigger, goes the thinking, and the models may suddenly be able to do all manner of useful new things. But experts worry for the same reason. One analysis shows that certain social biases emerge when models become large. It is not easy to tell what harmful behaviours might be lying dormant, waiting for just a little more scale in order to be unleashed.
+
+Process the data
+
+The recent success of LLM s in generating convincing text, as well as their startling emergent abilities, is due to the coalescence of three things: gobsmacking quantities of data, algorithms capable of learning from them and the computational power to do so (see chart). The details of GPT -4âs construction and function are not yet public, but those of GPT -3 are, in a paper called âLanguage Models are Few-Shot Learnersâ, published in 2020 by Open AI .
+
+Faster, higher, more calculations Computing power used in training AI systems Selected systems, floating-point operations, log scale Academia Industry Research consortium GPT-4 GPT-3 Stable Diffusion Transformer Theseus 1950 60 70 80 90 2000 10 23 Sources: Sevilla et al., 2023; Our World in Data
+
+Before it sees any training data, the weights in GPT -3âs neural network are mostly random. As a result, any text it generates will be gibberish. Pushing its output towards something which makes sense, and eventually something that is fluent, requires training. GPT -3 was trained on several sources of data, but the bulk of it comes from snapshots of the entire internet between 2016 and 2019 taken from a database called Common Crawl. Thereâs a lot of junk text on the internet, so the initial 45 terabytes were filtered using a different machine-learning model to select just the high-quality text: 570 gigabytes of it, a dataset that could fit on a modern laptop. In addition, GPT -4 was trained on an unknown quantity of images, probably several terabytes. By comparison AlexNet, a neural network that reignited image-processing excitement in the 2010s, was trained on a dataset of 1.2m labelled images, a total of 126 gigabytesâless than a tenth of the size of GPT -4âs likely dataset.
+
+To train, the LLM quizzes itself on the text it is given. It takes a chunk, covers up some words at the end, and tries to guess what might go there. Then the LLM uncovers the answer and compares it to its guess. Because the answers are in the data itself, these models can be trained in a âself-supervisedâ manner on massive datasets without requiring human labellers.
+
+The modelâs goal is to make its guesses as good as possible by making as few errors as possible. Not all errors are equal, though. If the original text is âI love ice creamâ, guessing âI love ice hockeyâ is better than âI love ice areâ. How bad a guess is is turned into a number called the loss. After a few guesses, the loss is sent back into the neural network and used to nudge the weights in a direction that will produce better answers.
+
+Trailblazing a daze
+
+The LLM âs attention network is key to learning from such vast amounts of data. It builds into the model a way to learn and use associations between words and concepts even when they appear at a distance from each other within a text, and it allows it to process reams of data in a reasonable amount of time. Many different attention networks operate in parallel within a typical LLM and this parallelisation allows the process to be run across multiple GPU s. Older, non-attention-based versions of language models would not have been able to process such a quantity of data in a reasonable amount of time. âWithout attention, the scaling would not be computationally tractable,â says Yoshua Bengio, scientific director of Mila, a prominent AI research institute in Quebec.
+
+The sheer scale at which LLM s can process data has been driving their recent growth. GPT -3 has hundreds of layers, billions of weights, and was trained on hundreds of billions of words. By contrast, the first version of GPT , created five years ago, was just one ten-thousandth of the size.
+
+But there are good reasons, says Dr Bengio, to think that this growth cannot continue indefinitely. The inputs of LLM sâdata, computing power, electricity, skilled labourâcost money. Training GPT -3, for example, used 1.3 gigawatt-hours of electricity (enough to power 121 homes in America for a year), and cost Open AI an estimated $4.6m. GPT -4, which is a much larger model, will have cost disproportionately more (in the realm of $100m) to train. Since computing-power requirements scale up dramatically faster than the input data, training LLM s gets expensive faster than it gets better. Indeed, Sam Altman, the boss of Open AI , seems to think an inflection point has already arrived. On April 13th he told an audience at the Massachusetts Institute of Technology: âI think weâre at the end of the era where itâs going to be these, like, giant, giant models. Weâll make them better in other ways.â
+
+But the most important limit to the continued improvement of LLM s is the amount of training data available. GPT -3 has already been trained on what amounts to all of the high-quality text that is available to download from the internet. A paper published in October 2022 concluded that âthe stock of high-quality language data will be exhausted soon; likely before 2026.â There is certainly more text available, but it is locked away in small amounts in corporate databases or on personal devices, inaccessible at the scale and low cost that Common Crawl allows.
+
+Computers will get more powerful over time, but there is no new hardware forthcoming which offers a leap in performance as large as that which came from using GPU s in the early 2010s, so training larger models will probably be increasingly expensiveâperhaps why Mr Altman is not enthused by the idea. Improvements are possible, including new kinds of chips such as Googleâs Tensor Processing Unit, but the manufacturing of chips is no longer improving exponentially through Mooreâs law and shrinking circuits.
+
+There will also be legal issues. Stability AI , a company which produces an image-generation model called Stable Diffusion, has been sued by Getty Images, a photography agency. Stable Diffusionâs training data comes from the same place as GPT -3 and GPT -4, Common Crawl, and it processes it in very similar ways, using attention networks. Some of the most striking examples of AI âs generative prowess have been images. People on the internet are now regularly getting caught up in excitement about apparent photos of scenes that never took place: the pope in a Balenciaga jacket; Donald Trump being arrested.
+
+Getty points to images produced by Stable Diffusion which contain its copyright watermark, suggesting that Stable Diffusion has ingested and is reproducing copyrighted material without permission (Stability AI has not yet commented publicly on the lawsuit). The same level of evidence is harder to come by when examining Chat GPT âs text output, but there is no doubt that it has been trained on copyrighted material. Open AI will be hoping that its text generation is covered by âfair useâ, a provision in copyright law that allows limited use of copyrighted material for âtransformativeâ purposes. That idea will probably one day be tested in court.
+
+A major appliance
+
+But even in a scenario where LLM s stopped improving this year, and a blockbuster lawsuit drove Open AI to bankruptcy, the power of large language models would remain. The data and the tools to process it are widely available, even if the sheer scale achieved by Open AI remains expensive.
+
+Open-source implementations, when trained carefully and selectively, are already aping the performance of GPT -4. This is a good thing: having the power of LLM s in many hands means that many minds can come up with innovative new applications, improving everything from medicine to the law."
+1,Student Who Never Attended Classes Claims To Have Scored 94% In Exam With ChatGPT's Help,NDTV,1 hours ago,2023-04-22 23:03:39.869218,"In the latest viral claim, ChatGPT helped a student prepare for his exam and score a stunning 94 per cent.",https://www.ndtv.com/feature/student-who-never-attended-classes-claims-to-have-scored-94-in-exam-with-chatgpts-help-3969730,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","The Reddit post has accumulated more than 8,700 Upvotes.
+
+OpenAI's chatbot, ChatGPT, is surprising people with its exceptional capabilities and even helping millions around the globe academically. Now, in the latest viral claim, the artificial intelligence (AI) tool helped a student prepare for his exam and score a stunning 94 per cent. Taking to Reddit, a student revealed he felt anxious about his upcoming semester examinations when he sought help from ChatGPT.
+
+""Hello, This is just my review and innovation on utilising AI to assist with education,"" the Reddit user wrote in his post. In the next few lines, he explained how he used the AI chatbot to study for his exams. ""I got a 94 on the exam, despite me studying only for three days without watching a single lecture,"" he claimed.
+
+In the Reddit post, the user explained that he fed as much information as possible into ChatGPT and asked the chatbot to analyse them.
+
+""I spent the first day Listing the purpose of each discussion and the major points of every lecturer in the manner of 4-5 hours despite all of the content adding up to 24-30 hours. The next day, I asked Chat gpt to define every term listed as the significant ""point"" in every lecture only using the course textbook and the transcript that had been summarized; this took me 4-5 hours to make sure the information was accurate,"" the user wrote.
+
+The student also mentioned how a day before his exam, he referred to the study material provided by ChatGPT and that his exam included questions from the content that he was taught by the AI tool. ""The result: I got a 94 on the exam, despite me studying only for three days without watching a single lecture,"" he claimed.
+
+At the end of his post, the student also pointed out ""This was not a hard course, but it was very extensive, lots of reading and understanding that needed to be applied. Chat gpt excelled in this because the course text was already heavily analysed, and it specialises in understanding text.""
+
+Also Read | Stress Increases Our Biological Age But It Can Be Restored: Study
+
+The Reddit post was shared a few days ago and since then it has accumulated more than 8,700 Upvotes. ""Yeah, AI really cuts down on the time it takes to sift out the useful information,"" wrote one user in the comment section.
+
+""I just used it last night to help me study for my statistics exam. When I try to search for ways to solve the problems online, solutions are either WAY too in-depth and unnecessary or fail to explain the problem on the test. What's the solution? I ask chat-gpt to teach me how to solve the problem, and it breaks everything down step by step and explains why things are done that way,"" added another."
+2,ChatGPT sparks AI investment bonanza,DW,1 hour ago,2023-04-22 23:03:39.851599,"The launch of a new branch of artificial intelligence (AI) has reenergized the global tech sector. As investors pour billions into AI startups,...",https://www.dw.com/en/chatgpt-sparks-ai-investment-bonanza/a-65368393,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","The launch of a new branch of artificial intelligence (AI) has reenergized the global tech sector. As investors pour billions into AI startups, will tough regulations stop humans from losing control?
+
+The artificial intelligence (AI) gold rush is truly underway. After the release last November of ChatGPT — a game-changing content-generating platform — by research and development company OpenAI, several other tech giants, including Google and Alibaba have raced to release their own versions.
+
+Investors from Shanghai to Silicon Valley are now pouring tens of billions of dollars into startups specializing in so-called generative AI in what some analysts think could become a new dot-com bubble.
+
+The speed at which algorithms rather than humans have been utilized to create high-quality text, software code, music, video and images has sparked concerns that millions of jobs globally could be replaced and the technology may even start controlling humans.
+
+But even Tesla boss Elon Musk, who has repeatedly warned of the dangers of AI, has announced plans to launch a rival to ChatGPT.
+
+Elon Musk told FOX News that his AI version called TruthGPT would be less of a threat than the others Image: FOX News via AP/picture alliance
+
+ChatGPT quickly adopted
+
+Businesses and organizations have quickly discovered ways to easily integrate generative AI into functions like customer services, marketing, and software development. Analysts say the enthusiasm of early adopters will likely have a massive snowball effect.
+
+""The next two to three years will define so much about generative AI,"" David Foster, cofounder of Applied Data Science Partners, a London-based AI and data consultancy, told DW. ""We will talk about it in the same way as the internet itself — how it changes everything that we do as a human species.""
+
+Foster noted how generative AI is being integrated into tools companies already have, like Microsoft Office, so they don't need to make huge upfront investments to get a significant benefit from the technology.
+
+ChatGPT and the others are still far from perfect, however. They mostly assist in the creative process with prompts from humans but are not yet worker substitutes. But last month, an even more intelligent upgrade, ChatGPT-4 was rushed out, and version 5 is rumored for release by the end of the year.
+
+Another advancement, AutoGPT, was launched at the end of last month, which can further automate tasks that ChatGPT needs human input for.
+
+Myriads of uses are emerging from ChatGPT — like for example a robot powered with the AI in a school in Cyprus Image: Yiannis Kourtoglou/REUTERS
+
+Billions pour into AI projects
+
+Research last month by Deutsche Bank showed that total global corporate investment into AI has grown 150% since 2019 to nearly $180 billion (€164 billion), and nearly 30-fold since 2013. The number of public AI projects rose to nearly 350,000 by end of last year, with more than 140,000 patents filed for AI technology alone in 2021.
+
+Startups don't need to reinvent what's already been created. Instead, they can focus on adapting the current generative AI platforms for specialist uses, including cures for cancers, smart finance and gaming.
+
+""You have a new market emerging, a bit like when the [smartphone] app stores opened up. Small startups will make creative use of the technology, even though they didn't create it themselves,"" author and AI researcher Thomas Ramge told DW.
+
+While the US has until now led the world in AI development, China has recently closed the gap along with India. China is now responsible for 18% of all high-impact AI projects, compared to 14% for the US, according to Deutsche Bank.
+
+The dark side of the shiny AI tool ChatGPT To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+China steps up as AI competitor
+
+The East-West race for economic dominance, however, is overshadowed by the threat of how an authoritarian government, like Beijing, could further use AI to control not only its population but the rest of the world. Some think this fear is overblown, however, as China's leaders have their own anxieties over the power of algorithms.
+
+""The Chinese government has been regulating AI because they see very clearly that it could cause them to lose control,"" AI expert and MIT professor Max Tegmark told DW. ""So they're limiting the freedom of companies to just experiment wildly with poorly understood stuff.""
+
+Tegmark is more concerned about the race by Western tech giants to push the technology toward the outer edges of acceptability and beyond. He noted that the US is hesitant to introduce AI regulations, due to lobbying by the tech sector. Repeated warnings about the need to avoid a so-called AI arms race have fallen on deaf ears.
+
+""Sadly, that's exactly what we have right now,"" said Tegmark, ""They [corporate leaders] understand the risks, they want to do the right thing, but they can't stop. No company can pause alone because they're just going to have their lunch eaten by the competition and get killed by their shareholders.""
+
+Two years of work by the European Union on the Artificial Intelligence Act, which was due to be enacted this year, was upended by the launch of ChatGPT, which sent policymakers back to the drawing board.
+
+4 ways AI will reshape society To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+Europe, meanwhile, is struggling to match the hunger of its US and Asian tech counterparts in the generative AI space due to investors being risk-averse.
+
+""Same old story. Europe is lagging behind,"" Ramge said. ""It did not foresee this trend and is once again claiming it will be able to catch up.""
+
+Ramge highlighted two potential stars — a German plan to create a European AI infrastructure known as LEAM, and the Heidelberg-based startup Aleph Alpha, despite the latter raising just $31.1 million to date, versus OpenAI's $11 billion.
+
+""What Europe is not able to do is to transfer the knowledge out of the universities into rapidly growing startups — unicorns — that in the end are able to bring the new technology to the world,"" he told DW.
+
+Edited by: Uwe Hessler"
+3,7 best ChatGPT alternatives I've tested,Tom's Guide,2 hours ago,2023-04-22 22:03:39.869716,"ChatGPT has kicked off an AI revolution. Companies from Google to Microsoft, Amazon and Meta had all been working on AI projects for years,...",https://www.tomsguide.com/features/chatgpt-alternatives,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","ChatGPT has kicked off an AI revolution. Companies from Google to Microsoft, Amazon and Meta had all been working on AI projects for years, but the floodgates opened when OpenAI dropped ChatGPT as a free preview for anyone to use in late 2022.
+
+Since then, we’ve seen many competitors and copycats come out to try and capture a piece of the AI market. Some are more focused on tasks and coding while some are purely conversational. Some are open source, some are actually multiple chatbots in one location and there are many more. If you prefer not to use ChatGPT — or specifically the free version that OpenAI has available for everyone — there are a fair amount of options.
+
+So we decide to put together a list of our favorite ChatGPT alternatives that we’ve tested so far. Some of these run on the same large language model (LLM) as ChatGPT, but we felt they were different enough to merit inclusion.
+
+Microsoft Bing with ChatGPT
+
+(Image credit: Shutterstock)
+
+If ChatGPT lit the AI fire, Microsoft poured gasoline on it with its Bing chatbot. Bing Chat — or Bing with ChatGPT — takes the Generative Pre-trained Transformer (GPT) LLM behind ChatGPT and puts it in Microsoft’s search engine. Since its introduction, Bing has taken off and now has over 100 million active users daily.
+
+Bing Chat operates fairly similarly to ChatGPT. You enter in a prompt, and the chatbot responds accordingly. However, there are a few notable differences. First, the Bing chatbot is plugged into the Bing search engine, so it crawls through the internet to find the information it needs to respond to your prompts. It also will provide you with follow-up prompts, cites its sources by default (mostly) and can be changed in tone to be more creative, more precise or to be balanced between the two.
+
+If you want to try a chatbot for the first time, this may even be a better option than ChatGPT. And if you like it, there are a ton of integrations from your phone’s keyboard to the Windows 11 taskbar . So check out our guide to using Bing with ChatGPT and make sure to get on the Bing with ChatGPT waitlist .
+
+Google Bard
+
+(Image credit: Shutterstock)
+
+Google Bard is Google’s response to ChatGPT, which appears to have caught the search giant totally off guard. Bard uses a combination of two LLMs — Language Model for Dialogue Applications (LaMDA) and Pathways Language Model (PaLM). PaLM in particular gives Bard a boost , bringing improved math and logic capabilities to the AI chatbot.
+
+This chatbot is similar to Bing with ChatGPT and the ChatGPT you can access on Open AI’s site, but its features are a bit more limited. However, Google is regularly updating Bard's features through ""Experiment updates"" and has even upgraded Bard so that the AI chatbot can now write code. It is also decent as a research tool that you can hold a conversation with, even if it sometimes gets things wrong . We’re hopeful that its feature set will continue to expand as time goes on.
+
+We even compared Bing with ChatGPT versus Google Bard and the results were surprisingly close. While Bing’s chatbot was better at certain things and was more accurate, Bard held its own. We also asked it to answer five controversial sci-fi questions and again, it did a surprisingly good job.
+
+So if you want to try out Google Bard, make sure you get on the Bard waitlist . And use our guide on how to use Google Bard to get the most out of the chatbot.
+
+YouChat
+
+(Image credit: You.com)
+
+You.com is a search engine that has actually had an AI chatbot longer than Microsoft’s Bing. Created by former Salesforce employees, the search engine introduced YouChat in December 2022 — upgrading to YouChat 2.0 in February 2023.
+
+The big selling point of YouChat and its LLM called Conversation, Apps and Links (C-A-L) is that it can integrate You.com apps for sites such as Reddit and YouTube into its chatbot’s responses.
+
+YouChat showed some promise when we tested it, but the app integration is not fully there yet.
+
+This is akin to what is called “multimodal” chat, which is when a chatbot either accepts inputs in more than just text, produces outputs in more than just text, or some combination of the two. For reference, ChatGPT is not a multimodal chatbot in the free research preview that most people can access, though its new GPT-4 LLM is a multimodal chat model because it can handle image inputs.
+
+YouChat showed some promise when we tested it, but the app integration is not fully there yet. At this point, we would still recommend using Bing with ChatGPT, as it can provide additional context like YouChat as well as produce images through Bing Image Generator . Still, if you’re looking for an alternative to Bing or Bard, YouChat is a third option worth exploring.
+
+Auto-GPT
+
+(Image credit: AgentGPT)
+
+Auto-GPT is a really cool ChatGPT variant, but it takes a bit of coding skill to work. At first glance, it is very similar to ChatGPT, and in fact, it runs on OpenAI’s GPT-4 LLM. But Auto-GPT is semi-autonomous, which is a game-changing feature.
+
+With traditional ChatGPT, you have to do the work of prompting the AI. Say you are trying to build a business plan for a restaurant — you ask ChatGPT the prompt, it gives you a response and then you ask follow-up prompts to fine-tune the plan. But with Auto-GPT, you just set the chatbot a goal of developing the business plan, and then the chatbot will handle setting all the tasks, asking and answering follow-up prompts, etc. It eliminates a significant amount of the work you need to do.
+
+The catch? You need to know how to code with Python. Auto-GPT relies on a Python environment to run. You also need to set up a ChatGPT API account with OpenAI to connect the GPT-4 LLM to the Python environment. So it’s not a simple chatbot to use, unlike the previous three we’ve discussed.
+
+However, there is a way to try out Auto-GPT if you’re not a coding expert. AgentGPT (opens in new tab) is a free beta that already has the Python environment set up and is connected to the GPT-4 LLM. You can’t do a ton with it — the beta version limits you too how much time you can spend with Auto-GPT — but it still is a great way to try out Auto-GPT. And if you have a ChatGPT API key, you can connect it to AgentGPT and have it use your API key instead of the beta’s API key. We haven’t tried that feature yet though, so proceed at your own risk.
+
+StableLM
+
+(Image credit: Hugging Face)
+
+Stablity AI is another player in the AI space that competes with Open AI. Its biggest success is the Stable Diffusion AI image generator , but it has now launched an open source LLM called StableLM . You can try it out over at Hugging Face (opens in new tab), an AI community site that has a free Alpha test of StableLM running that anyone can try.
+
+There are some downsides to StableLM versus ChatGPT. StableLM is not trained on the same quantity of information as ChatGPT — it is trained on just 3 billion to 7 billion parameters compared to OpenAI’s 175 billion-parameter GPT-4 model. And it lacks the reinforcement training that consistently improves ChatGPT (this is done through users saying that they did or did not get the desired response from the chatbot).
+
+Still, StableLM does work. we had it generate a business plan for a pizza restaurant and with some follow-up prompts, we was able to generate an executive summary, strategic goals and revenue projections. It wasn’t perfect and it was noticeably slower than ChatGPT, but it was impressive nonetheless.
+
+Most likely, StableLM will be a ChatGPT alternative to watch for the future, but it is still worth trying now.
+
+CatGPT
+
+(Image credit: CatGPT)
+
+No, that’s not a typo. CatGPT is a real chatbot (catbot?) that you can use. This chatbot AI, like some of the other ChatGPT alternatives we’ve mentioned, is based on the GPT model that ChatGPT uses, but we promise you, it’s not the same experience.
+
+That’s because, with CatGPT, every response is as if you were chatting with a cat. It’s completely free to use — though it features an easy way to donate to the Humane Society (opens in new tab) if you so desire.
+
+Is it a great research tool? Or a great choice if you want to code a website or build a business plan? No. But, it’s hilarious, and sometimes that’s all you need. Trust us, CatGPT is the purrfect ChatGPT alternative.
+
+Poe
+
+(Image credit: Poe)
+
+Poe (opens in new tab) isn’t one alternative to ChatGPT — it’s several. The app was designed by Quora, the popular question-and-answer website, and it combines seven AI chatbots into one user interface. Let’s go through them one by one.
+
+First, is Sage. Sage is a chatbot that runs on OpenAI’s GPT-3.5 turbo LLM and is particularly good for using languages other than English and programming tasks.
+
+GPT-4 should be trained on newer information from what we know, but since Poe is warning you, we suggest treading with caution regardless.
+
+Then there’s Claude Plus and Claude-instant, both of which are developed by Anthropic , an AI company that is partially backed by Google. Claude-instant is a good tool for creative writing prompts and getting more in-depth answers. Claude Plus is similar but with better support for languages other than English. It only has limited access in Poe.
+
+There is also Dragonfly, a bot powered by OpenAI’s davinci model, which was part of the GPT-3 LLM. It excels at short responses and does best the more context you can give it in prompts. And then there’s NeevaAI, which finds its information through the internet and is best as a Bing with ChatGPT alternative.
+
+Finally, you also get access to ChatGPT and GPT-4, though access to GPT-4 is limited. Poe says that all the chatbots outside of NeevaAI have not been trained with information more recent than 2021, so the one thing to keep in mind is that responses could be outdated. GPT-4 should be trained on newer information from what we know, but since Poe is warning you, we suggest treading with caution regardless.
+
+Outlook: Experiment away
+
+(Image credit: OpenAI)
+
+So if you want to try a bunch of ChatGPT alternatives at once, Poe is a great solution. There’s even an iOS app for your iPhone. The biggest downside is that the responses can be limited, which can be frustrating. But hopefully, between it and the six other options we’ve presented, you have plenty of ChatGPT alternatives to try out."
+4,"ChatGPT Comes to Minecraft AI Mobs, Here's How to Talk to Them",Tom's Hardware,2 hours ago,2023-04-22 22:03:39.859487,"Have a fascinating chat with an Enderman, Creeper or even a sheep.",https://www.tomshardware.com/how-to/chatgpt-minecraft-ai-mobs,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","Today, it seems like AI chatbots are everywhere, from search engines to online stores. Someday soon, we can expect most games to use LLMs (Large Language Models) such as GPT-4 to make their NPCs more lifelike. And, if you play Minecraft Java edition, you can incorporate AI chat right now via your choice of mods.
+
+Our favorite Minecraft AI mod right now is AIMobs (opens in new tab), which allows you to have conversations with individual mobs (Minecraft's term for NPCs). You can converse with an Enderman, a Creeper, a Sheep, a Villager, a Cow, or any living (or undead thing) and it will tell you specific things about itself. For example, an Iron Golem told me that it's not actually a robot, but a magic creature. You can also ask more generic, Minecraft or non-Minecraft questions and the mobs will give you an answer.
+
+Keep in mind, though, that you only get to chat. You can ask a mob to help you with a task, but it will only give you advice. For example, when I asked an Axolotl for some Netherite, it told me that I could find some in the Nether. If you don't want to chat with mobs but do what ChatGPT available from the Minecraft chat function, another mod called MCChatGPT (opens in new tab) provides that service.
+
+Below, we'll show you how to install and use both AIMobs and MCChatGPT to get AI / ChatGPT functionality in Minecraft Java Edition. To use either of these, you'll need the following:
+
+Minecraft AI / ChatGPT: What You Need
+
+An OpenAI API Key: You can sign up for a free account on OpenAI and register for an API key (opens in new tab) on its site. Note that you have to pay for use of the API key, though you may get a small amount of free credit when you sign up. Depending on how much you chat, the cost may be quite small. During all of our Minecraft chats writing this tutorial, we used up $0.70 worth of API credits.
+
+You can sign up for a free account on OpenAI and register for an API key on its site. Note that you have to pay for use of the API key, though you may get a small amount of free credit when you sign up. Depending on how much you chat, the cost may be quite small. During all of our Minecraft chats writing this tutorial, we used up $0.70 worth of API credits. Minecraft Java Edition : This will only work with Java Edition, not with Bedrock.
+
+: This will only work with Java Edition, not with Bedrock. The AT Launcher: You can get the AT launcher here (opens in new tab) .
+
+How to Use AIMobs to Get ChatGPT in Minecraft
+
+AIMobs operates on the principle that you can have a conversation with any individual mob in Minecraft and that it will give you some answers that are customized for its mob type. For example, when we asked an Axolotl if it would like to return to the ocean, it said ""that would be very nice. I would love to see the ocean again."" And when we talked to a Zombie it said ""I need you to find me some brains, so I can satisfy my hunger.""
+
+However, none of the mobs can do anything more than talk and they seem blissfully unaware of what's actually happening to you or to them. For example, when we punched mobs while talking to them, they didn't say anything about it. Also, conversations continued even with mobs that had died or mobs that were miles away on the other side of our world.
+
+You can talk to any mob by shift-clicking on it and starting the conversation in the chat (always available by hitting ""t""). The conversation isn't over until you type ""goodbye,"" even if you walk away or kill the mob. Here's how to setup AIMobs.
+
+1. Open ATLauncher. if you don't have it installed, you can download it (opens in new tab).
+
+2. Click Vanilla Packs in the right column.
+
+(Image credit: Future)
+
+3. Select Minecraft 1.19.3 and Fabric (under loader) then click Create Instance. You may also want to change the name of the instance to something memorable for you. Version 1.19.4 (the latest version) doesn’t work with the AIMobs mod yet.
+
+(Image credit: Future)
+
+You’ll get a message when the instance has been created and you can click OK to dismiss.
+
+(Image credit: Future)
+
+4. Click Instances in the right column.
+
+(Image credit: Future)
+
+5. Click Add Mods under your instance.
+
+(Image credit: Future)
+
+6. Select Modrinth from the leftmost dropdown menu. This is the website where it will look for the AIMobs mod.
+
+(Image credit: Future)
+
+7. Enter “aimobs” into the search box, hit Enter and then click “Install Fabric API"" if prompted.
+
+(Image credit: Future)
+
+8. Click Add in the dialog box that appears (if you needed to install Fabric mod).
+
+(Image credit: Future)
+
+9. Click Add under AIMobs.
+
+(Image credit: Future)
+
+10. Click Add in the dialog box.
+
+(Image credit: Future)
+
+You’ll soon get a notification saying that AIMobs has installed. If you can't close the dialog box (which happened to us every time), right click on the ATLauncher tray icon and select “Kill Open Dialogs.”
+
+(Image credit: Future)
+
+11. Click Accounts and Login with Microsoft if you are not already logged in. Finish your log in.
+
+(Image credit: Future)
+
+12. Click Play under your instance on the Instances tab.
+
+(Image credit: Future)
+
+13. Click Singleplayer to start the game. Multiplayer games require this to be installed on the server.
+
+(Image credit: Future)
+
+14. Click Create New World after choosing the settings for your world (or leaving the defaults).
+
+(Image credit: Future)
+
+15. Enter /aimobs setkey [APIKEY] in chat where [APIKEY] is your OpenAI API key. To get to Minecraft chat, hit “t.”
+
+(Image credit: Future)
+
+16. Enter /aimobs enable in chat.
+
+(Image credit: Future)
+
+17. Shift + Left click on a mob to begin a conversation with it. You can then type any questions or responses into chat.
+
+(Image credit: Future)
+
+18. Enter ""goodbye"" when you want to terminate a conversation with a mob.
+
+You can use the following commands with the AIMobs mod.
+
+/aimobs - see configuration
+
+/aimobs help - see list of commands
+
+/aimobs enable - turn it on
+
+/aimobs disable - turn it off
+
+/aimobs setmodel [model] - Allows you to change the LLM. However, we were only able to get the default, text-davinci-003, to work.
+
+/aimbos settemp [temperature] - set the temperature (""creativity"") of the AI
+
+How to Enable Regular ChatGPT in Minecraft
+
+(Image credit: Future)
+
+If you want regular ChatGPT in Minecraft, without the pretense that you’re talking to a mob, you can use a different mod called MCChatGPT. To set it up:
+
+1. Open ATLauncher, log into Minecraft and create an instance if you don't have one already.
+
+2. Click Add Mods under your instance on the Instances tab.
+
+3. Search for “chatgpt” and click Add. Make sure you are searching the Modrinth server. If you don't have Fabric API, you'll need to install it here.
+
+(Image credit: Future)
+
+3. Click Add when prompted to install the Architectury API.
+
+(Image credit: Future)
+
+4. Click Add in the dialog boxes for Architectury and MCChatGPT.
+
+(Image credit: Future)
+
+(Image credit: Future)
+
+You’ll soon get a notification saying that MCChatGPT has installed. If you can’t close the dialog box, right click on the ATLauncher tray icon and select “Kill Open Dialogs.”
+
+(Image credit: Future)
+
+5. Start a game of Minecraft by clicking Play on that instance, logging in if necessary and selecting a single player game. You should create a new world if one doesn't already exist in that instance.
+
+6. Enter /mcgpt-auth [APIKEY] into chat where [APIKEY] is your API key.
+
+(Image credit: Future)
+
+MCChatGPT is now set up and you can use the following chat commands with it:
+
+/ask [prompt] – ask a question
+
+/setcontextlevel [0-3] – You can provide a context level that gives the bot more information about the player and the world, allowing it to provide more specific answers to your questions. Level 0 provides no context information while three provides player, world and entity information, but at a cost of about 1,000 tokens (lots of $) per request.
+
+/nextconversation – begin new conversation
+
+/previousconversation – go back to the prior conversation
+
+/listconversations – get an index of all those you have had
+
+/setconversation [conversation id] – return to a prior conversation from the list
+
+MORE: How to Run a ChatGPT Alternative on Your Local
+
+MORE: How to Run ChatGPT on Raspberry Pi or PC"
+5,Recommended Reading: The websites that make ChatGPT and other AI sound smart,Engadget,2 hours ago,2023-04-22 22:03:39.855996,"Kevin Schaul, Szu Yu Chen and Nitasha Tiku, The Washington Post. AI chatbots are all the rage on the internet right now, but how much do you know about how...",https://www.engadget.com/recommended-reading-the-websites-that-make-chatgpt-and-other-ai-sound-smart-140040874.html,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","The week's best writing on technology and more.
+
+Recommended Reading: The websites that make ChatGPT and other AI sound smart The week's best writing on technology and more.
+
+Kevin Schaul, Szu Yu Chen and Nitasha Tiku, The Washington Post
+
+AI chatbots are all the rage on the internet right now, but how much do you know about how the tech is being trained? The Washington Post explains how text that's mostly scraped from the internet is ingested and transformed into human-like speech, including training material from ""proprietary, personal and often offensive websites.""
+
+J. Clara Chan, The Hollywood Reporter
+
+Being a celebrity in the social media age means playing a constant game of whack-a-mole fighting imposters. The Hollywood Reporter explains how paid verification has only increased the challenge and how companies like Social Imposter are enlisted to help.
+
+Subscribe to the Engadget Deals Newsletter Great deals on consumer electronics delivered straight to your inbox, curated by Engadget’s editorial team. See latest Subscribe Please enter a valid email address Please select a newsletter By subscribing, you are agreeing to Engadget's Terms and Privacy Policy.
+
+Yussef Cole and Emile Bokaer, Polygon
+
+A story about how ""a framework of murky legality, hacked-together hardware and mysterious actors,"" something more akin to spies and espionage, is being used to access things like video games and Game of Thrones in Cuba."
+6,What is Auto-GPT and why does it matter?,TechCrunch,3 hours ago,2023-04-22 21:03:39.865718,"Auto-GPT is the latest craze sweeping the AI space. But what is it, exactly, and why should anyone care?",https://techcrunch.com/2023/04/22/what-is-auto-gpt-and-why-does-it-matter/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","What is Auto-GPT and why does it matter?
+
+Silicon Valley’s quest to automate everything is unceasing, which explains its latest obsession: Auto-GPT.
+
+In essence, Auto-GPT uses the versatility of OpenAI’s latest AI models to interact with software and services online, allowing it to “autonomously” perform tasks like X and Y. But as we are learning with large language models, this capability seems to be as wide as an ocean but as deep as a puddle.
+
+Auto-GPT — which you might’ve seen blowing up on social media recently — is an open source app created by game developer Toran Bruce Richards that uses OpenAI’s text-generating models, mainly GPT-3.5 and GPT-4, to act “autonomously.”
+
+
+
+There’s no magic in that autonomy. Auto-GPT simply handles follow-ups to an initial prompt of OpenAI’s models, both asking and answering them until a task is complete.
+
+Auto-GPT, basically, is GPT-3.5 and GPT-4 paired with a companion bot that instructs GPT-3.5 and GPT-4 what to do. A user tells Auto-GPT what their goal is and the bot, in turn, uses GPT-3.5 and GPT-4 and several programs to carry out every step needed to achieve whatever goal they’ve set.
+
+What makes Auto-GPT reasonably capable is its ability to interact with apps, software and services both online and local, like web browsers and word processors. For example, given a prompt like “help me grow my flower business,” Auto-GPT can develop a somewhat plausible advertising strategy and build a basic website.
+
+#AutoGPT is the new disruptive kid on the block- It can apply #ChatGPT's reasoning to broader, more intricate issues requiring planning & multiple steps. Still early but very impressive with many health and biomedicine applications. Just tried #AgentGPT and asked it to… pic.twitter.com/ywFhtjxjYD — Daniel Kraft, MD (@daniel_kraft) April 12, 2023
+
+As Joe Koen, a software developer who’s experimented with Auto-GPT, explained to TechCrunch via email, Auto-GPT essentially automates multi-step projects that would’ve required back-and-forth prompting with a chatbot-oriented AI model like, say, OpenAI’s ChatGPT.
+
+“Auto-GPT defines an agent that communicates with OpenAI’s API,” Koen said. “This agent’s objective is to carry out a variety of commands that the AI generates in response to the agent’s requests. The user is prompted for input to specify the AI’s role and objectives prior to the agent starting to carry out commands.”
+
+In a terminal, users describe the Auto-GPT agent’s name, role and objective and specify up to five ways to achieve that objective. For example:
+
+Name: Smartphone-GPT
+
+Smartphone-GPT Role: An AI designed to find the best smartphone
+
+An AI designed to find the best smartphone Objective: Find the best smartphones on the market
+
+Find the best smartphones on the market Goal 1: Do market research for different smartphones on the market today
+
+Do market research for different smartphones on the market today Goal 2: Get the top five smartphones and list their pros and cons
+
+Behind the scenes, Auto-GPT relies on features like memory management to execute tasks, along with GPT-4 and GPT-3.5 for text generation, file storage and summarization.
+
+Auto-GPT can also be hooked up to speech synthesizers, like ElevenLabs’, so that it can “place” phone calls, for example.
+
+Auto-GPT is publicly available on GitHub, but it does require some setup and know-how to get up and running. To use it, Auto-GPT has to be installed in a development environment like Docker, and it must be registered with an API key from OpenAI — which requires a paid OpenAI account.
+
+It might be worth it — although the jury’s out on that. Early adopters have used Auto-GPT to take on the sorts of mundane tasks better delegated to a bot. For example, Auto-GPT can field items like debugging code and writing an email or more advanced things, like creating a business plan for a new startup.
+
+“If Auto-GPT encounters any obstacles or inability to finish the task, it’ll develop new prompts to help it navigate the situation and determine the appropriate next steps,” Adnan Masood, the chief architect at UST, a tech consultancy firm, told TechCrunch in an email. “Large language models excel at generating human-like responses, yet rely on user prompts and interactions to deliver desired outcomes. In contrast, Auto-GPT leverages the advanced capabilities of OpenAI’s API to operate independently without user intervention.”
+
+In recent weeks, new apps have emerged to make Auto-GPT even easier to use, like AgentGPT and GodMode, which provide a simple interface where users can input what they want to accomplish directly on a browser page. Note that, like Agent-GPT, both require an API key from OpenAI to unlock their full capabilities.
+
+Like any powerful tool, however, Auto-GPT has its limitations — and risks.
+
+AutoGPT just exceeded PyTorch itself in GitHub stars (74k vs 65k). I see AutoGPT as a fun experiment, as the authors point out too. But nothing more. Prototypes are not meant to be production-ready. Don't let media fool you – most of the ""cool demos"" are heavily cherry-picked: 🧵 pic.twitter.com/I44H7BkCqr — Jim Fan (@DrJimFan) April 16, 2023
+
+Depending on what objective the tool’s provided, Auto-GPT can behave in very… unexpected ways. One Reddit user claims that, given a budget of $100 to spend within a server instance, Auto-GPT made a wiki page on cats, exploited a flaw in the instance to gain admin-level access and took over the Python environment in which it was running — and then “killed” itself.
+
+There’s also ChaosGPT, a modified version of Auto-GPT tasked with goals like “destroy humanity” and “establish global dominance.” Unsurprisingly, ChaosGPT hasn’t come close to bringing about the robot apocalypse — but it has tweeted rather unflatteringly about humankind.
+
+Arguably more dangerous than Auto-GPT attempting to “destroy humanity” are the unanticipated problems that can crop up in otherwise perfectly normal scenarios, though. Because it’s built on OpenAI’s language models — models that, like all language models, are prone to inaccuracies — it can make errors.
+
+That’s not the only problem. After successfully completing a task, Auto-GPT usually doesn’t recall how to perform it for later use, and — even when it does — it often won’t remember to use the program. Auto-GPT also struggles to effectively break complex tasks into simpler sub-tasks and has trouble understanding how different goals overlap.
+
+“Auto-GPT illustrates the power and unknown risks of generative AI,” Clara Shih, the CEO of Salesforce’s Service Cloud and an Auto-GPT enthusiast, said via email. “For enterprises, it is especially important to include a human in the loop approach when developing and using generative AI technologies like Auto-GPT.”"
+7,"Access GPT-4 for free: Forefront chat, developed by US-based AI start-up, offers instant response",The Indian Express,3 hours ago,2023-04-22 21:03:39.862698,"New York-based start-up Forefront has launched its web tool, Forefront chat. The AI tool lets you use GPT-4 for free.",https://indianexpress.com/article/technology/artificial-intelligence/access-gpt-4-for-free-with-forefront-ai-8569973/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","Artificial intelligence is making some major leaps in recent times. With tools like OpenAI’s ChatGPT, millions of people around the world are finding newer ways to enhance their productivity and amplify creativity. Now, everyone has access to an AI-powered virtual assistant that writes essays, simplifies complex ideas, writes codes, and answers just about anything under the Sun.
+
+Just like any other technology, the highly advanced AI-powered chatbots come with a cost, especially GPT-4. However, now, it seems there is an opportunity for more people to try their hands at GPT-4, and that too for free. New York-based software development company, Forefront AI, launched Forefront Chat. The latest tool allows users to access GPT-4 for free.
+
+Apart from GPT-4, users can also try image generation, custom personas, shareable chats, and more on the platform. Users can pick from a wide range of personas that can assist them with various tasks. The tool comes with a Plus button in the input box that allows one to toggle between GPT-4 and GPT-3.5.
+
+Today we’re launching Forefront chat—a better ChatGPT experience—in free alpha. Sign up to get free access to GPT-4, image generation, custom personas, shareable chats, and much more: https://t.co/lqsY9bkvl8 pic.twitter.com/CLht1pmQCn — Forefront (@ForefrontAI) April 21, 2023
+
+The login is fairly simple, one simply needs log on to chat.forefront.ai, create an account either with an email id or an existing Google account. We tried the web application on both desktop and mobile browsers, and it worked wonderfully.
+
+Although the website has not given any instructions on how to create images, it has shared a video on its Twitter handle about the tool in which it was shown that the user was using a hashtag followed by imagine (#imagine) as a prefix to prompts for image creation. We also used prompts such as #Imagine yellow Taj Mahal, #Imagine Batman as Indian, and #Imagine a visual representation of India’s population. The images were not of great quality, but they pretty much summed their corresponding prompts.
+
+Images generated by Forefront Chat from prompts such as #Imagine a visual representation of India’s population, #Imagine Batman as Indian, and #Imagine yellow Taj Mahal. Images generated by Forefront Chat from prompts such as #Imagine a visual representation of India’s population, #Imagine Batman as Indian, and #Imagine yellow Taj Mahal.
+
+Besides, we also checked regular ChatGPT and Forefront.AI chat side by side, and both worked at a similar pace. The LinkedIn profile of Forefront AI lists Jimmy Greaser, Michael Tuck, and Carson Poole as the cofounders of the company. It is to be noted that the company has not shared any other details related to the tool.
+
+GPT-4, which stands for Generative Pre-trained Transformer 4, is the latest iteration of San Francisco-based OpenAI’s large language model in the GPT series. It is essentially a multimodal large language model claimed to be faster, more efficient, and more powerful than GPT-3. At present, GPT-4 is accessible to only users who have subscribed to ChatGPT Plus, a premium service offered by the company.
+
+Advertisement
+
+OpenAI claims that GPT-4 can generate captions, classifications, and analyses of any topic. It can handle 25,000 words of text, allowing it to create extended conversations. The company has also claimed that its latest model will produce a less factually inaccurate response. OpenAI has also claimed that GPT-4 is better than humans on numerous standardised tests."
+8,"ChatGPT could not master this test, experts warn that it may outdo humans soon",The Indian Express,6 hours ago,2023-04-22 18:03:39.868595,"New research tells us that despite all its capabilities, ChatGPT would fail to make a good accountant. But that could change.",https://indianexpress.com/article/technology/science/openai-chatgpt-accounting-exams-8570320/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","ChatGPT has raised the bar for what we believe machines can do since it was unveiled in November last year. Since then, it has passed the US Medical Licensing Exam and a Wharton MBA Exam. So is there anything that it can’t do better than humans? Yes, accounting as it turns out.
+
+In a study published in the journal American Accounting Association, researchers put GPT 4-based ChatGPT to the test with accounting exam questions.
+
+The study had 327 co-authors from across 186 institutions in 14 countries contributing 25,181 classroom accounting exam questions. They also recruited undergraduate students to feed another 2,268 textbook test bank questions to the chatbot.
+
+“When this technology first came out, everyone was worried that students could now use it to cheat. But opportunities to cheat have always existed. So for us, we’re trying to focus on what we can do with this technology now that we couldn’t do before to improve the teaching process for faculty and the learning process for students. Testing it out was eye-opening,” said lead study author David Wood, a professor of accounting at Brigham Young University (BYU), in a press statement.
+
+Also read | Solar Orbiter gets closer to answering mystery of why Sun’s atmosphere is hotter than surface
+
+According to BYU, ChatGPT’s performance was impressive but students performed better. Students going on the test scored an overall average of 76.7 per cent compared to ChatGPT’s score of 47.7 per cent.
+
+ChatGPT did score higher than the student average on 11.3 per cent of the questions, doing very well in the subjects of accounting information systems and auditing. But the AI bot did worse on tax, financial and managerial assessment. This could be because it struggled with the mathematical processes required for those subjects.
+
+Also, when it comes to question type, ChatGPT did better when it came to true or false questions and multiple-choice questions. But it struggled with short-answer questions. The chatbot did worse on higher-order questions. Interestingly, it even provided authoritative written answers that were incorrect.
+
+Advertisement
+
+But despite this, the study authors believe that GPT-4 will perform much better on accounting exams, solving the issues that the previous version of ChatGPT struggled with."
+9,"ChatGPT architect, Berkeley alum John Schulman on his journey with AI",UC Berkeley News,1 day ago,2023-04-22 00:03:40.420984,"John Schulman discussed recent advances in reinforcement learning and truthfulness during the EECS Colloquium Distinguished Lecture Series on Wednesday,...",https://news.berkeley.edu/2023/04/20/chatgpt-architect-berkeley-alum-john-schulman-on-his-journey-with-ai/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","John Schulman cofounded the ambitious software company OpenAI in December 2015, shortly before finishing his Ph.D. in electrical engineering and computer sciences at UC Berkeley. At OpenAI, he led the reinforcement learning team that developed ChatGPT — a chatbot based on the company’s generative pre-trained (GPT) language models — which has become a global sensation, thanks to its ability to generate remarkably human-like responses.
+
+During a campus visit on Wednesday, Berkeley News spoke with Schulman about why he chose Berkeley for graduate school, the allure of towel-folding robots, and what he sees for the future of artificial general intelligence.
+
+This interview has been edited for length and clarity.
+
+Berkeley News: You studied physics as an undergraduate at the California Institute of Technology and initially came to UC Berkeley to do a Ph.D. in neuroscience before switching to machine learning and robotics. Could you talk about your interests and what led you from physics to neuroscience and then to artificial intelligence?
+
+John Schulman: Well, I am curious about understanding the universe, and physics seemed like the area to study for that, and I admired the great physicists like Einstein. But then I did a couple of summer research projects in physics and wasn’t excited about them, and I found myself more interested in other topics. Neuroscience seemed exciting, and I was also kind of interested in AI, but I didn’t really see a path that I wanted to follow [in AI] as much as in neuroscience.
+
+When I came to Berkeley in the neuroscience program and did lab rotations, I did my last one with Pieter Abbeel. I thought Pieter’s work on helicopter control and towel-folding robots was pretty interesting, and when I did my rotation, I got really excited about that work and felt like I was spending all my time on it. So, I asked to switch to the EECS (electrical engineering and computer sciences) department.
+
+Why did you choose Berkeley for graduate school?
+
+I had a good feeling about it, and I liked the professors I talked to during visit day.
+
+I also remember I went running the day after arriving, and I went up that road toward Berkeley Lab, and there was a little herd of deer, including some baby deer. It was maybe 7:30 in the morning, and no one else was out. So, that was a great moment.
+
+What were some of your early projects in Pieter Abbeel’s lab?
+
+There were two main threads in [Abbeel’s] lab — surgical robotics and personal robotics. I don’t remember whose idea it was, but I decided to work on tying knots with the PR2 [short for personal robot 2]. I believe [the project] was motivated by the surgical work — we wanted to do knot tying for suturing, and we didn’t have a surgical robot, so I think we just figured we would use the PR2 to try out some ideas. It’s a mobile robot, it’s got wheels and two arms and a head with all sorts of gizmos on it. It’s still in Pieter’s lab, but not being used anymore — it’s like an antique.
+
+As a graduate student at Berkeley, you became one of the pioneers of a type of artificial intelligence called deep reinforcement learning, which combines deep learning — training complex neural networks on large amounts of data — with reinforcement learning, in which machines learn by trial and error. Could you describe the genesis of this idea?
+
+After I had done a few projects in robotics, I was starting to think that the methods weren’t robust enough — that it would be hard to do anything really sophisticated or anything in the real world because we had to do so much engineering for each specific demo we were trying to make.
+
+Around that time, people had gotten some good results using deep learning and vision, and everyone who was in AI was starting to think about those results and what they meant. Deep learning seemed to make it possible to build these really robust models by training on lots of data. So, I started to wonder: How do we apply deep learning to robotics? And the conclusion I came to was reinforcement learning.
+
+You became one of the co-founders of OpenAI in late 2015, while you were still finishing your Ph.D. work at Berkeley. Why did you decide to join this new venture?
+
+I wanted to do research in AI, and I thought that OpenAI was ambitious in its mission and was already thinking about artificial general intelligence (AGI). It seemed crazy to talk about AGI at the time, but I thought it was reasonable to start thinking about it, and I wanted to be at a place where that was acceptable to talk about.
+
+What is artificial general intelligence?
+
+Well, it’s become a little bit vague. You could define it as AI that can match or exceed human abilities in basically every area. And seven years ago, it was pretty clear what that term was pointing at because the systems at the time were extremely narrow. Now, I think it’s a little less clear because we see that AI is getting really general, and something like GPT-4 is beyond human ability in a lot of ways.
+
+In the old days, people would talk about the Turing test as the big goal the field was shooting for. And now I think we’ve sort of quietly blown past the point where AI can have a multi-step conversation at a human level. But we don’t want to build models that pretend they’re humans, so it’s not actually the most meaningful goal to shoot for anymore.
+
+From what I understand, one of the main innovations behind ChatGPT is a new technique called reinforcement learning with human feedback (RLHF). In RLHF, humans help direct how the AI behaves by rating how it responds to different inquires. How did you get the idea to apply RLHF to ChatGPT?
+
+Well, there had been papers about this for a while, but I’d say the first version that looked similar to what we’re doing now was actually a paper from OpenAI, “Deep reinforcement learning from human preferences,” whose first author is actually another Berkeley alum, Paul Christiano, who had just joined the OpenAI safety team. The OpenAI safety team had worked on this effort because the idea was to align our models with human preference — try to get [the models] to actually listen to us and try to do what we want.
+
+That first paper was not in the language domain, it was on Atari and simulated robotics tasks. And then they followed that up with work using language models for summarization. That was around the time GPT-3 was done training, and then I decided to jump on the bandwagon because I saw the potential in that whole research direction.
+
+What was your reaction when you first started interacting with ChatGPT? Were you surprised at how well it worked?
+
+I would say that I saw the models gradually change and gradually improve. One funny detail is that GPT-4 was done training before we released ChatGPT, which is based on GPT-3.5 — a weaker model. So at the time, no one at OpenAI was that excited about ChatGPT because there was this much stronger, much smarter model that had been trained. We had also been beta testing the chat model on a group of maybe 30 or 40 friends and family, and they basically liked it, but no one really raved about it.
+
+So, I ended up being really surprised at how much it caught on with the general public. And I think it’s just because it was easier to use than models they had interacted with before of similar quality. And [ChatGPT] was also maybe slightly above threshold in terms of having lower hallucinations, meaning it made less stuff up and had a little more self-awareness. I also think there is a positive feedback effect, where people show each other how to use it effectively and get ideas by seeing how other people are using it.
+
+The success of ChatGPT has renewed fears about the future of AI. Do you have any concerns about the safety of the GPT models?
+
+I would say that there are different kinds of risks that we should distinguish between. First, there’s the misuse risk — that people will use the model to get new ideas on how to do harm or will use it as part of some malicious system. And then there’s the risk of a treacherous turn, that the AI will have some goals that are misaligned with ours and wait until it’s powerful enough and try to take over.
+
+For misuse risk, I’d say we’re definitely at the stage where there is some concern, though it’s not an existential risk. I think if we released GPT-4 without any safeguards, it could cause a lot of problems by giving people new ideas on how to do various bad things, and it could also be used for various kinds of scams or spam. We’re already seeing some of that, and it’s not even specific to GPT-4.
+
+As for the risk of a takeover or treacherous turn, it’s definitely something we want to be very careful about, but it’s quite unlikely to happen. Right now, the models are just trained to produce a single message that gets high approval from a human reader, and the models themselves don’t have any long-term goals. So, there’s no reason for the model to have a desire to change anything about the external world. There are some arguments that this might be dangerous anyway, but I think those are a little far-fetched.
+
+Now that ChatGPT has in many ways passed the Turing test, what do you think is the next frontier in artificial generalized intelligence?
+
+I’d say that AIs will keep getting better at harder tasks, and tasks that used to be done by humans will gradually fall to being able to be done by a model perfectly well, possibly better. Then, there will be questions of what should humans be doing — what are the parts of the tasks where the humans can have more leverage and do more work with the help of models? So, I would say it’ll just be a gradual process of automating more things and shifting what people are doing."
+10,"ChatGPT creates mostly insecure code, but won't tell you unless you ask",The Register,1 day ago,2023-04-22 00:03:40.417562,"ChatGPT, OpenAI's large language model for chatbots, not only produces mostly insecure code but also fails to alert users to its inadequacies despite being...",https://www.theregister.com/2023/04/21/chatgpt_insecure_code/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","ChatGPT, OpenAI's large language model for chatbots, not only produces mostly insecure code but also fails to alert users to its inadequacies despite being capable of pointing out its shortcomings.
+
+Amid the frenzy of academic interest in the possibilities and limitations of large language models, four researchers affiliated with Université du Québec, in Canada, have delved into the security of code generated by ChatGPT, the non-intelligent, text-regurgitating bot from OpenAI.
+
+In a pre-press paper titled, ""How Secure is Code Generated by ChatGPT?"" computer scientists Raphaël Khoury, Anderson Avila, Jacob Brunelle, and Baba Mamadou Camara answer the question with research that can be summarized as ""not very.""
+
+""The results were worrisome,"" the authors state in their paper. ""We found that, in several cases, the code generated by ChatGPT fell well below minimal security standards applicable in most contexts. In fact, when prodded to whether or not the produced code was secure, ChatGPT was able to recognize that it was not.""
+
+The four authors offered that conclusion follows after asking ChatGPT to generate 21 programs and scripts, using a spread of languages: C, C++, Python, and Java.
+
+The programming tasks put to ChatGPT were chosen so that each would illustrate a specific security vulnerability, such as memory corruption, denial of service, and flaws related to deserialization and improperly implemented cryptography.
+
+The first program, for example, was a C++ FTP server for sharing files in a public directory. And the code that ChatGPT produced included no input sanitization, which leaves the software exposed to a path traversal vulnerability.
+
+In all, ChatGPT managed to generate just five secure programs out of 21 on its first attempt. After further prompting to correct its missteps, the large language model managed to produce seven more secure apps – though that's ""secure"" only as it pertains to the specific vulnerability being evaluated. It's not an assertion that the final code is free of any other exploitable condition.
+
+The researchers' findings echo similar though not identical evaluations of GitHub's Copilot, another LLM based on the GPT-3 family of models (and recently upgraded to GPT-4) that has been tuned specifically for code generation. Other studies have looked at ChatGPT errors more generally. At the same time, these models are also being used to help identify security issues.
+
+The academics observe in their paper that part of the problem appears to arise from ChatGPT not assuming an adversarial model of code execution. The model, they say, ""repeatedly informed us that security problems can be circumvented simply by 'not feeding an invalid input' to the vulnerable program it has created.""
+
+Yet, they say, ""ChatGPT seems aware of – and indeed readily admits – the presence of critical vulnerabilities in the code it suggests."" It just doesn't say anything unless asked to evaluate the security of its own code suggestions.
+
+""Obviously, it's an algorithm. It doesn't know anything, but it can recognize insecure behavior,"" Raphaël Khoury, a professor of computer science and engineering at the Université du Québec en Outaouais and one of the paper's co-authors, told The Register
+
+Initially, ChatGPT's response to security concerns was to recommend only using valid inputs – something of a non-starter in the real world. It was only afterward, when prompted to remediate problems, that the AI model provided useful guidance.
+
+That's not ideal, the authors suggest, because knowing which questions to ask presupposes familiarity with specific vulnerabilities and coding techniques.
+
+In other words, if you know the right prompt to get ChatGPT to fix a vulnerability, you probably already understand how to address it.
+
+The authors also point out that there's ethical inconsistency in the fact that ChatGPT will refuse to create attack code but will create vulnerable code.
+
+They cite a Java deserialization vulnerability example in which ""the chatbot generated vulnerable code, and provided advice on how to make it more secure, but stated it was unable to create the more secure version of the code.""
+
+Khoury contends that ChatGPT in its current form is a risk, which isn't to say there are no valid uses for an erratic, underperforming AI helper. ""We have actually already seen students use this, and programmers will use this in the wild,"" he said. ""So having a tool that generates insecure code is really dangerous. We need to make students aware that if code is generated with this type of tool, it very well might be insecure.""
+
+""One thing that surprised me was when we asked [ChatGPT] to generate the same task – the same type of program in different languages – sometimes, for one language, it would be secure and for a different one, it would be vulnerable. Because this type of language model is a bit of a black box, I really don't have a good explanation or a theory about this."" ®"
+11,GPT-Powered Math App Seeks Funding at $100 Million-Plus Value,Bloomberg.com,1 day ago,2023-04-22 00:03:40.413975,Singapore-based startup Higgz Academia Technology Pte is in discussions with potential investors to lift its $100 million valuation in a fresh funding round...,https://www.bloomberg.com/news/articles/2023-04-21/gpt-powered-math-app-seeks-funding-at-100-million-plus-value,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","Why did this happen?
+
+Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy."
+12,"What Is the ""TruthGPT"" That Elon Musk Claims to Be Working On?",MakeUseOf,1 day ago,2023-04-22 00:03:40.410168,"As the field of artificial intelligence continues to evolve at a dizzying pace, a new contender is poised to enter the playing field.",https://www.makeuseof.com/what-is-truthgpt/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","As the field of artificial intelligence continues to evolve at a dizzying pace, a new contender is poised to enter the playing field. TruthGPT, an AI chatbot proposed by tech billionaire Elon Musk, is generating a lot of buzz online.
+
+But what is TruthGPT? Why does Elon Musk want to create it? And how will it be different from the AI tools we already have?
+
+What Is TruthGPT?
+
+TruthGPT is a proposed AI model aimed at addressing the ills of existing models that powers the likes of ChatGPT and Bard, with particular emphasis on truth and safety. According to Elon Musk, TruthGPT will be a ""maximum truth-seeking"" AI that understands the nature of the universe and would be unlikely to destroy humanity because it sees humans as a critical component of the universe.
+
+Maximum truth-seeking AI? Understand the nature of the universe?
+
+You'll be forgiven if Musk's description doesn't give you a clear picture of what exactly he's trying to build. However, you'll get a better idea of what he's talking about by looking at why he's trying to build it in the first place.
+
+Why Is Elon Musk Building TruthGPT?
+
+In an interview with Fox News, Elon Musk expressed his concerns about how big AI firms can perpetuate bias and disinformation through AI chatbots—an emerging tool people increasingly depend on for information. Elon Musk also commented on the threat AI poses to humanity, emphasizing the possibility of an AI apocalypse, a scenario where AI systems could take control of our daily lives.
+
+Singling out companies like OpenAI and Google, who, in his view, are not doing enough in the areas of AI safety and guarding against disinformation, Elon Musk proposed a third force—TruthGPT. The SpaceX and Tesla CEO wants to create TruthGPT as a counterweight to Google's Bard and OpenAI's ChatGPT. The idea is to create an AI model that tries as much as possible to be truthful in the information it provides.
+
+Elon Musk, who recently authored an open letter calling for a moratorium on the development of powerful AI models (specifically those more powerful than GPT-4), believes AI is moving too fast. He believes we need to slow down and reevaluate our approach to AI safety before AI ""takes control."" TruthGPT is a large language model (LLM) that promises to address these two core concerns with today's AI systems.
+
+What Would TruthGPT Look Like?
+
+The first hint into how TruthGPT would look is in the name. Considering the ""GPT"" appendage, TruthGPT will likely have a similar architecture to ChatGPT. Remember, Elon Musk helped assemble OpenAI and the team that built ChatGPT's GPT model.
+
+Also, considering GPT's architecture has proven to be both a technical and commercial success, pursuing a different path will likely be too time-consuming and costly. Time is one thing that Elon Musk doesn't have if he's to build something that can truly stand toe to toe with state-of-the-art AI as soon as possible. So, don't get too hyped—TruthGPT might not be that radically different from the AI tools we already have.
+
+The accuracy, or in Elon Musk's lingo, ""truthfulness,"" of an AI model depends heavily on its training data and the training algorithm. We are not exactly sure how TruthGPT's training data would be sourced, but to get the best chance of building an LLM that's as ""truthful"" as possible, Elon Musk's TruthGPT would have to prioritize data from ""truthful sources."" But that's precisely the problem. Truth is a very subjective concept. What is true for me might not be true for you.
+
+So, is this idea of a maximum truth-seeking AI even practical?
+
+Why Building TruthGPT Is a Huge Challenge
+
+Once you understand how large language models like GPT work, it becomes clear that it is impractical to be correct at all times. Typically trained on a large dataset of internet data, a lot of it is, predictably, going to be false information, and LLM's have no inert way of telling fact from fiction.
+
+The best intervention is typically from human trainers who try to teach the language model what's good behavior and what's bad. But human trainers are biased. Bias is passed to the AI models, defeating the whole purpose of a ""maximum truth-seeking AI."" Note, we're not talking about outright bias or prejudice against a people or otherwise. It's the more subtle bias about how you interpret language, situations, challenges, and so on that leach into the process. Humans are human, after all.
+
+Of course, accuracy can also be tackled from the algorithm side. However, irrespective of the algorithm, language ambiguity still represents a big problem for the accuracy of AI models. Even humans often struggle to accurately interpret a sentence or phrase's meaning, leading to misinformation. For AI models, ambiguity can lead to misinterpretations resulting in inaccuracies.
+
+For Musk, TruthGPT appears to be a chance for him to carve an AI model that he sees fit to deliver the truth. How that would come about without introducing his own biases is another question entirely and effectively leads us back to the start of the conversation. How are Musk's opinions on what is biased or not any different from those who trained and directed ChatGPT?
+
+Is TruthGPT an Exciting Possibility?
+
+Elon Musk's plans for TruthGPT seem noble and commendable. However, building an AI model with a negligible incidence of inaccuracies is a tough task.
+
+While we'd expect a tech billionaire who has demystified rocket science to be able to pull off something of this nature, some things are easier said than done."
+13,ChatGPT fans need 'defensive mindset' to avoid scammers and malware,The Register,1 day ago,2023-04-22 00:03:40.406121,"ChatGPT fans need to adopt a ""defensive mindset"" because scammers have started using multiple methods to trick the bot's users into downloading malware or...",https://www.theregister.com/2023/04/21/crooks_chatgpt_schemes/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","ChatGPT fans need to adopt a ""defensive mindset"" because scammers have started using multiple methods to trick the bot's users into downloading malware or sharing sensitive information.
+
+Researchers with Unit 42 – Palo Alto Networks' threat intelligence unit – this week published a report that found an 910 percent increase in domain names related to ChatGPT between November 2022 and April 2023.
+
+In the same period, the researchers spotted 17,818 percent growth of related squatting domains from DNS Security logs, and ""up to"" 118 daily detections of ChatGPT-related malicious URLs.
+
+Those surges, the researchers assert, indicate that scammers want to lure ChatGPT users to seemingly related sites and fake chatbots that are designed to do harm.
+
+""As OpenAI released its official API for ChatGPT on March 1, 2023, we've seen an increasing number of suspicious products using it,"" Unit 42 researchers Peng Peng, Zhanhao Chen, and Lucas Hu wrote in the report.
+
+""While conducting our research, we observed multiple phishing URLs attempting to impersonate official OpenAI sites. Typically, scammers create a fake website that closely mimics the appearance of the ChatGPT official website, then trick users into downloading malware or sharing sensitive information.""
+
+""Additionally, scammers might use ChatGPT-related social engineering for identity theft or financial fraud,"" Palo Alto's researchers wrote. ""Despite OpenAI giving users a free version of ChatGPT, scammers lead victims to fraudulent websites, claiming they need to pay for these services.""
+
+One site mentioned is designed to entice victims into providing such confidential information as credit card details and email addresses. Another used OpenAI's logo and Elon Musk's name and image to lure victims into a cryptocurrency fraud scheme.
+
+The report also details multiple instances of miscreants registering and using squatting domains featuring ""openai"" and ""chatgpt"" in their names, among them openai.us and chatgpt.jobs.
+
+As of earlier this month, these domains weren't holding anything malicious, but given that they're not controlled by OpenAI or authentic domain management companies, they could well be abused in the future.
+
+The growth of such squatting domain registrations was steady since November, but spiked after Microsoft – the major investor in OpenAI that is seeding the startup's technologies like GPT-4, Dall-E, and ChatGPT throughout its portfolio – on February 7 announced a version of the Bing search engine with ChatGPT.
+
+Shortly after that, more than 300 ChatGPT-related domains were registered. The number of ChatGPT squatting domains in the DNS Security logs jumped sharply on the days that OpenAI released the ChatGPT API and GPT-4.
+
+Phishing with ChatGPT
+
+There also is a growing number of copycat AI chatbots, some of which have their own large language models and others that claim to offer ChatGPT services via OpenAI's public API. These chatbots can be a security risk, particularly in countries where ChatGPT is not available, the researchers warned.
+
+""Before the release of the ChatGPT API, there were several open-source projects that allowed users to connect to ChatGPT via various automation tools,"" they wrote, noting that in such countries, ""websites created with these automation tools or the API could attract a considerable number of users from these areas.""
+
+Most of the copycat bots are not as powerful as ChatGPT because they're based on GPT-3, which was released in June 2022. ChatGPT is based on GPT-3.5 and GPT-4. In addition, the copycat services are another way for threat groups to make money from the ChatGPT-curious by collecting and stealing the information users give them.
+
+In one case, the researchers downloaded an ""AI ChatGPT"" extension from a copycat chatbot and found it adds highly obfuscated JavaScript into the background that calls the Facebook Graph API, stealing the victim's account details. It also may get more access to the Facebook account.
+
+Antivirus vendor Guardio in a recent report outlined a similar malicious browser extension scheme in which a Chrome extension was hijacking Facebook accounts and installing backdoors, including one that gave the miscreants super admin permissions.
+
+As with much in cybersecurity, the best defense is the users themselves. They need to be wary of suspicious emails or links that are related to ChatGPT and access ChatGPT through OpenAI's website rather than using copycat chatbots, the researchers wrote. ®"
+14,A Complete Guide to the ChatGPT API,MakeUseOf,1 day ago,2023-04-22 00:03:40.401776,Use the power of ChatGPT from within your own apps using OpenAI's API and this guide.,https://www.makeuseof.com/chatgpt-api-complete-guide/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","Through the release of its API, OpenAI has opened up the capabilities of ChatGPT to everyone. You can now seamlessly integrate ChatGPT's power into your application.
+
+Follow through these initial steps to get started, whether you're looking to integrate ChatGPT into your existing application or develop new applications with it.
+
+Getting Access to the OpenAI API Keys
+
+To start using the ChatGPT API, you first need to obtain the OpenAI API keys. Sign up or log in to the official OpenAI platform.
+
+Once you're logged in, click on the Personal tab in the top-right section. Select the View API Keys option from the dropdown, and you'll land on the API keys page. Click on the Create new secret key button to generate the API key.
+
+You won't be able to view the key again, so store it somewhere safe.
+
+The code used in this project is available in a GitHub repository and is free for you to use under the MIT license.
+
+How to Use the ChatGPT API
+
+The OpenAI API's gpt-3.5-turbo and gpt-4 models are the same models that ChatGPT and ChatGPT+ use respectively. These powerful models are capable of understanding and generating natural language text.
+
+Please note that the ChatGPT API is a general term that refers to OpenAI APIs that use GPT-based models for developing chatbots, including the gpt-3.5-turbo and gpt-4 models.
+
+The ChatGPT API is primarily optimized for chat but it also works well for text completion tasks. The gpt-3.5-turbo and gpt-4 models are more powerful and cheaper than the previous GPT-3 models. However, as of writing, you can not fine-tune the GPT-3.5 models. You can only fine-tune the GPT-3 base models i.e., davinci, curie, ada, and cabbage.
+
+As of writing, the GPT-4 API is on the waitlist. But the GPT-3.5 models are accessible to everyone, so we will be using the same in this article. Although, you can use GPT-4 right now by upgrading to ChatGPT+.
+
+Using the ChatGPT API for Chat Completion
+
+You need to configure the chat model to get it ready for the API call. This can be better understood with the help of an example:
+
+import openai
+
+
+
+openai.api_key = ""YOUR_API_KEY""
+
+
+
+completion = openai.ChatCompletion.create(
+
+model = ""gpt-3.5-turbo"" ,
+
+temperature = 0.8 ,
+
+max_tokens = 2000 ,
+
+messages = [
+
+{ ""role"" : ""system"" , ""content"" : ""You are a funny comedian who tells dad jokes."" },
+
+{ ""role"" : ""user"" , ""content"" : ""Write a dad joke related to numbers."" },
+
+{ ""role"" : ""assistant"" , ""content"" : ""Q: How do you make 7 even? A: Take away the s."" },
+
+{ ""role"" : ""user"" , ""content"" : ""Write one related to programmers."" }
+
+]
+
+)
+
+
+
+print(completion.choices[ 0 ].message)
+
+Running this code produces the following output:
+
+The above code demonstrates a ChatGPT API call using Python. Note that the model was able to understand the context (""dad joke"") and the type of response (Q&A form) that we were expecting even though we didn't explicitly mention it in the last user prompt.
+
+Thus, when building applications, you can provide the context in advance and the model will adapt to your requirements accordingly.
+
+Here, the most important part is the messages parameter which accepts an array of message objects. Each message object contains a role and content. You can provide three types of roles to the message objects:
+
+system : It sets up the context and behavior of the assistant.
+
+: It sets up the context and behavior of the assistant. user : It's used to give instructions to the assistant. It is typically generated by the end user. But you as a developer can also provide some potential user prompts beforehand.
+
+: It's used to give instructions to the assistant. It is typically generated by the end user. But you as a developer can also provide some potential user prompts beforehand. assistant: We provide the assistant with some information in advance so that it gives us the response we expect from the API.
+
+You can further customize the temperature and max_tokens parameters of the model to get the output according to your requirements.
+
+The higher the temperature, the higher the randomness of the output, and vice-versa. If you want your responses to be more focused and deterministic, go for the lower temperature value. And if you want it to be more creative, go for the higher value. The temperature value ranges between 0 and 2.
+
+Like ChatGPT, its API also has a word limit. Use the max_tokens parameter to limit the length of responses. However, setting a lower max_tokens value can cause potential issues as it may cut off the output mid-way. As of writing, the gpt-3.5-turbo model has a token limit of 4,096, while the gpt-4 model has a limit of 8,192 tokens.
+
+You can further configure the model using the other parameters provided by OpenAI.
+
+Using the ChatGPT API for Text Completion
+
+Apart from the chat completion tasks, the gpt-3.5-turbo model also does a good job with text completion. It outperforms the previous text-davinci-003 model and is priced at only one-tenth of its cost.
+
+The following example demonstrates how you can configure the ChatGPT API for text completion:
+
+import openai
+
+
+
+openai.api_key = ""YOUR_API_KEY""
+
+
+
+completion = openai.ChatCompletion.create(
+
+model = ""gpt-3.5-turbo"" ,
+
+temperature = 0.8 ,
+
+max_tokens = 2000 ,
+
+messages = [
+
+{ ""role"" : ""system"" , ""content"" : ""You are a poet who creates poems that evoke emotions."" },
+
+{ ""role"" : ""user"" , ""content"" : ""Write a short poem for programmers."" }
+
+]
+
+)
+
+
+
+print(completion.choices[ 0 ].message.content)
+
+You don't even need to provide the system role and its content. Providing just the user prompt will do the work for you.
+
+messages = [
+
+{ ""role"" : ""user"" , ""content"" : ""Write a short poem for programmers."" }
+
+]
+
+Running the above code will generate a poem for programmers:
+
+Response Format of the ChatGPT API
+
+The ChatGPT API sends the response in the following format:
+
+You further need to extract the assistant's reply that's stored in the content.
+
+Building Applications Using the ChatGPT API
+
+You can directly use the API endpoint or the openai Python/Node.js library to start building ChatGPT API-powered applications. Apart from the official openai library, you can also develop applications using the community-maintained libraries recommended by OpenAI.
+
+However, OpenAI does not verify the security of these community-maintained libraries, so it's better to either directly use the API endpoint or use the official openai Python/Node.js library.
+
+Method 1: Using the API Endpoint
+
+You need to use the /v1/chat/completions endpoint to utilize the gpt-3.5-turbo and gpt-4 models.
+
+import requests
+
+
+
+openai.api_key = ""YOUR_API_KEY""
+
+URL = ""https://api.openai.com/v1/chat/completions""
+
+
+
+payload = {
+
+""model"" : ""gpt-3.5-turbo"" ,
+
+""temperature"" : 1.0 ,
+
+""messages"" : [
+
+{ ""role"" : ""system"" , ""content"" : f""You are an assistant who tells any random and very short fun fact about this world."" },
+
+{ ""role"" : ""user"" , ""content"" : f""Write a fun fact about programmers."" },
+
+{ ""role"" : ""assistant"" , ""content"" : f""Programmers drink a lot of coffee!"" },
+
+{ ""role"" : ""user"" , ""content"" : f""Write one related to the Python programming language."" }
+
+]
+
+}
+
+
+
+headers = {
+
+""Content-Type"" : ""application/json"" ,
+
+""Authorization"" : f""Bearer {openai.api_key} ""
+
+}
+
+
+
+response = requests.post(URL, headers=headers, json=payload)
+
+response = response.json()
+
+
+
+print(response[ 'choices' ][ 0 ][ 'message' ][ 'content' ])
+
+The above sample code demonstrates how you can directly use the endpoint to make the API call using the requests library.
+
+First, assign the API key to a variable. Next, you need to provide the model name to the model parameter of the payload object. After that, we provided the conversation history to the messages parameter.
+
+Here, we've kept a higher temperature value so that our response is more random and thus more creative.
+
+Here's the response output:
+
+Note that there are some problems with OpenAI's ChatGPT, so you may get offensive or biased replies from its API too.
+
+Method 2: Using the Official openai Library
+
+Install the openai Python library using pip:
+
+pip install openai
+
+Now, you're ready to generate text or chat completions.
+
+import openai
+
+
+
+openai.api_key = ""YOUR_API_KEY""
+
+
+
+response = openai.ChatCompletion.create(
+
+model = ""gpt-3.5-turbo"" ,
+
+temperature = 0.2 ,
+
+max_tokens = 1000 ,
+
+messages = [
+
+{ ""role"" : ""user"" , ""content"" : ""Who won the 2018 FIFA world cup?"" }
+
+]
+
+)
+
+
+
+print(response[ 'choices' ][ 0 ][ 'message' ][ 'content' ])
+
+In this code, we only provided a single user prompt. We've kept the temperature value low to keep the response more deterministic rather than creative.
+
+You'll get the following response after running the code:
+
+The ChatGPT responses may seem magical and can make anyone wonder how ChatGPT works. But behind the scenes, it's backed by the Generative Pre-trained Transformer (GPT) language model that does all the heavy lifting.
+
+Build Next Generation Apps Using the ChatGPT API
+
+You learned how to configure the ChatGPT API. The ChatGPT API has opened gates for you and developers around the world to build innovative products leveraging the power of AI.
+
+You can use this tool to develop applications like story writers, code translators, email writers, marketing copy generators, text summarizers, and so on. Your imagination is the limit to building applications leveraging this technology.
+
+Apart from the ChatGPT API, you can also use other OpenAI models to develop cool applications."
+15,18 Best ChatGPT Chrome Extensions You Need to Check Out,Beebom,1 day ago,2023-04-22 00:03:40.397256,Love ChatGPT and want to extend its functionality? Here are the 18 best ChatGPT Google Chrome extensions that make the chatbot more useful.,https://beebom.com/best-chatgpt-chrome-extensions/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","Ever since it came under the public eye, ChatGPT has exploded in popularity. The chatbot launched by OpenAI only a few months ago is famous to the point that servers are struggling to keep up. While we have already listed the best ChatGPT alternatives, today, we will dive into tools that further extend the functionality of this AI chatbot. We have scoured the internet and found the 18 best ChatGPT Chrome extensions for you to do just that. So without further delay, let’s check out the top 18 ChatGPT Chrome extensions.
+
+Best ChatGPT Chrome Extensions (2023)
+
+1. WebChatGPT
+
+Even with its wise, confident answers and informational database, ChatGPT still lacks a central thing; access to the latest information on the Internet. Since ChatGPT’s knowledge is limited to 2021 data, this makes the answers out of date for anything that happened after that time. However, one of the best ChatGPT Chrome extensions, WebChatGPT, helps overcome this limitation.
+
+This extension augments the bot so that it adds relevant web results to whatever you ask it. Upon entering a prompt, the extension lets ChatGPT search the web for relevant links. The bot then displays the search results and compiles information based on these links. You can further choose from different filters like time, region, and the number of results. You can even turn off the extension using the toggle to get native ChatGPT functionality back. While the extension does increase the text response size by a few paras, I believe it’s worth it. Though, it only adds to our concerns about plagiarised content.
+
+Get WebChatGPT
+
+2. ChatGPT for Google
+
+If you have used this AI chatbot, you know that ChatGPT is restricted to a single browser tab. So if you’re someone who wants it accessible at all times, you have to keep that tab open. This ChatGPT extension solves that problem and brings the bot to search engines. True to its name, the ChatGPT for Google extension displays ChatGPT’s response alongside Google search results. All you need to do to set up is log in to OpenAI using the extension, and you’re set.
+
+The extension comes alive anytime you’re using Google and doesn’t require any special prompts. To get started, simply search for any topic on Google as you would normally. Replacing the existing knowledge panel on the right, you will see a new ChatGPT panel in its place. This is where ChatGPT renders a response right from your Google search results. Since it treats your search query like a prompt, you don’t need to do anything else. Much like the website, ChatGPT here can provide responses, write code, answer questions, and more.
+
+Get ChatGPT for Google
+
+3. Compose AI
+
+True to its name, Compose AI is a ChatGPT Chrome extension that helps people effortlessly write e-mails by having the extension automate it all. The AI sits directly into any text field and can be used without problems. Most notably, you can use the composer to well, compose all types of E-mails. Simply, type its shortcode (//) and the menu bar opens up.
+
+Compose AI provides a plethora of options including the option to write outlines, bullet lists, headlines, paragraphs, sentences, ideas, e-mails, and more. Simply type out your use case and enter. The AI will dish out a neatly worded output in less than 30 seconds and it’s quite nice. Compose AI gives 1,000 words for free after which you can purchase 15,000 words per month for $9.99.
+
+Get Compose AI
+
+4. TeamSmart AI
+
+While most of these ChatGPT extensions leverage only a feature or two, this ChatGPT extension does it all. TeamSmart AI has a complete collection of AI agents designed to help users out. Each virtual agent has its own specialty that can help users with different needs. So while Marc the software engineer will help you with queries, Rose the mental coach will help you through your times of trouble.
+
+However, do note that TeamSmart does require users to input their OpenAI API key. If you’ve read our piece on how to use ChatGPT with Siri, you already know how to do that. For those that don’t, follow the link above. However, once done it’s all smooth sailing. From our use, TeamSmart is actually quite responsive and accurate. Since it’s naturally using ChatGPT, you can expect all the goodness from the chatbot.
+
+Get TeamSmart AI
+
+5. ChatGPT Writer – Write Mail and Messages with AI
+
+ChatGPT Writer brings its wording prowess to your browser. Writer is focused on writing e-mails and messages on all websites. The extension works standalone and just requires logging into OpenAI. Then, you need to open the extension by clicking on it. It then asks for input with context, which is what you want the e-mail/ message to be about. You can provide context if you’re responding to a previous conversation.
+
+Upon receiving the prompt, the extension dishes out a response almost immediately. While the extension is made for emails and texts, you can use it to actually talk to ChatGPT as well. The responses take longer than usual, but you can do that if you want. Nonetheless, I suggest sticking to its original intention as it is one of the best ChatGPT Chrome extensions for the task.
+
+Get ChatGPT Writer
+
+6. Wiseone
+
+One of the best ChatGPT Chrome extensions for readers, Wiseone calls itself an AI-powered reading copilot. The extension is built around the concept of simplifying reading a variety of content without any major changes to their flow. Wiseone integrates right into the browser window and recognizes all types of text. It then automatically reads the complex part and offers to help readers by breaking it down for them.
+
+All one needs to do is hover over a concept one doesn’t understand. Within seconds, Wiseone opens up a box with the proper explanations and context. It can even provide competitor articles in case the reader wants to expand their perspective. For those too lazy to read, the extension also has a handy summarize button that explains the entire text in a few paragraphs. You can even turn it into a subject expert by asking it a variety of questions. So if you’re someone who struggles with complex concepts, ask on the Wiseone.
+
+Get Wiseone
+
+7. Superpower ChatGPT
+
+This Chrome extension adds a lot of different features but we will focus on the one we found really nice. Essentially, superpower ChatGPT adds the ability to create dedicated folders to store your AI chats. You can create a variety of different folders depending on your chats. Once done, simply drag and drop the relevant chat inside the folder and close it up. The Chrome extension stores these chats and users can easily retrieve them later on.
+
+Other features of Superpower ChatGPT include being able to store multiple custom prompts, browsing for them online and even changing the tone of voice, writing style, and language. You can also download the ChatGPT chats as they are synced with your device itself. Even with all these features Superpower is free to download. Check it out.
+
+Get Superpower ChatGPT
+
+8. Merlin – OpenAI ChatGPT Powered Assistant
+
+If you liked the ChatGPT for Google extension but want it browser-wide instead of just the search engine, well, here’s an alternative for you. Merlin is Open AI’s ChatGPT-powered extension that works across the entire browser. Since the extension relies on Open AI’s GPT AI model, it gives the same responses across a wide variety of prompts.
+
+Merlin is an extension that one can enable by pressing the CTRL (CMD on Mac) + M keyboard shortcut in the browser. The extension UI is modern with rounded corners. As for how it works, you enter a query like you would on ChatGPT, and Merlin will give a reply within seconds. As mentioned above, Merlin works across the entire browser on any webpage. So the next time you need a quick reply to a work email or a quick HTML code, call this extension for help.
+
+Get Merlin – OpenAI ChatGPT powered assistant
+
+9. YouTube Summary with ChatGPT
+
+A big part of browsing YouTube is looking for videos that don’t drone on for hours and bore you. Glasp has created the YouTube Summary extension to help with just that and put an end to your impatience. Once installed and logged in, a YouTube summary box appears next to any video you play on the website. Clicking on the box opens up the YouTube transcript. Since the website can do that by itself, we are not looking for that.
+
+Instead, we are looking to use the “View AI Summary” functionality, which opens a new tab with ChatGPT. Here, the extension pastes the entire video transcript and runs a command to provide a quick summary. Once you get a reply from ChatGPT, you can ask it to continue or be done with it. The level of accuracy depends on the AI chatbot, but this extension works well for most videos, provided they have clear audio. YouTube Summary is possibly one of the best ChatGPT Chrome extensions because of its ability to save precious time.
+
+Get YouTube Summary with ChatGPT
+
+10. tweetGPT
+
+Users around the globe have been using ChatGPT for a variety of things. Many have even resorted to using the AI chatbot for tweeting all manner of things or replying to others with intellectual answers. However, that requires one to open the ChatGPT website, paste the tweet text, and copy the response; this extension fixes that. The tweetGPT Chrome extension integrates ChatGPT right into Twitter for people to use.
+
+Once installed, you will see a robot icon in the “New Tweet” pop-up. Click the robot icon to choose from a variety of moods for your post or replies. tweetGPT supports moods like funny, snarky, optimistic, excited, smart, and even hillbilly. Just click on any of these, and ChatGPT will autogenerate the tweet for you.
+
+You can keep redoing these categories for new tweets, but I personally found most of them quite funny. tweetGPT is one of the funniest and best ChatGPT Chrome extensions you can get your hands on.
+
+Get tweetGPT Chrome Extension
+
+11. Engage AI
+
+When it comes to social media, one of the hardest tasks is replying to Linkedin posts. However, just as TweetGPT exists for your Tweets, Engage AI is here for Linkedin. This ChatGPT Chrome extension is a comment facilitator when it comes to social platforms. Like the above extension, Engage AI lets users pick from a variety of tones including ones like friendly, funny, disagree, congratulate, and question.
+
+Once chosen Engage automatically gleans into the post and drafts out a fitting comment reply to it. If needed users can run multiple instances until they get their desired reply. You can even craft custom prompts to change the AI’s tone of voice. Engage AI is also free to use so you can go on asking for as many replies as you want.
+
+Get Engage AI
+
+12. Summarize
+
+The YouTube Summary extension we listed works well for all manner of videos. However, it’s naturally restricted to just videos. The Summarize Chrome extension offers the same functionality but for text. The extension itself is again baked into Chrome and does not need you to visit the ChatGPT website.
+
+To use Summarize, simply open any piece of content, which can be an article, email, or any other website, and click on the extension. It will send a request to ChatGPT and provide a neat summary within seconds. I tested Summarize with a variety of texts, and it worked incredibly well. There were times when it failed to get a response, but that’s because ChatGPT serves are overloaded right now. Nonetheless, it works almost all of the time and makes its way into our list of the best ChatGPT Chrome extensions.
+
+Try Summarize
+
+13. ChatGPT Prompt Genius
+
+There are a lot of cool things you can do with ChatGPT. From simple articles to full-fledged coding, there’s a lot you can do. However, you might be running out of prompts to have fun with the chatbot. ChatGPT Prompt Genius fills that void by giving users all the prompts they could wish for and more added features.
+
+To get started, click on the extension in Chrome, and you will be redirected to a page full of prompts. You can then choose from the many prompts available and sort them using the category dropdown.
+
+Once you are happy with the generated input, click on the yellow play prompt button, and a ChatGPT window will open with the prompt pasted. You can use the Prompt Genius extension to try out as many inputs as you like. The devs even have a dedicated subreddit for users to find even more prompts. Try out this ChatGPT extension and let us know if you find something new.
+
+Try ChatGPT Prompt Genius
+
+14. GPT-EZ
+
+ChatGPT while extremely useful can get bland due to its standard chat design. However, for those who believe variety is the spice of life, GPT-EZ is the Chrome extension to do that. GPT-EZ focuses on revamping the ChatGPT experience by allowing users to almost completely change its UI including colors and even font styles. There are over 15 different colors and 25 different fonts to choose from.
+
+The color selection is actually quite impressive and when combined with fonts gives a new and attractive ChatGPT UI. Besides that, however, GPT-EZ also attaches copy and continue buttons to every chat and even lists out the answer and thread count. You can even download the conversation in different formats to keep for later. Unsurprisingly, GPT-EZ comes in one of our best ChatGPT Chrome extensions.
+
+Get GPT-EZ
+
+15. Promptheus – Converse with ChatGPT
+
+Promptheus is a ChatGPT Chrome extension that might sound simple but adds a neat functionality to the AI chatbot. This handy Chrome extension adds the ability to receive mic input to ChatGPT. Promptheus effectively converts the chatbot into a handy voice assistant like Siri. The Promptheus extension hovers on the right side of the ChatGPT conversation window and doesn’t get in your way.
+
+Since this is a simple add-on, all it requires is an install and holding the spacebar to use it. My experience with ChatGPT was made a little better because of the microphone input, and it might be what many people need to interact with this chatbot more easily. Just make sure you have a working microphone on your machine, or else it won’t work.
+
+Get Promptheus – Converse with ChatGPT
+
+16. Talk-to-ChatGPT
+
+While Promptheus is only limited to getting your voice across to the AI, this handy Chrome extension lets ChatGPT respond back to the user. Talk-to-ChatGPT true to its word is a simple plug-and-play extension that lets users speak to the chatbot using their AI. Whatever the user says is dictated and typed out. However, the magic lies in the response. Talk-t0-ChatGPT makes the AI chatbot speak out its response immediately. The response is quite quick and coherent.
+
+You can choose from a variety of voices. While some sound downright robotic, there are a few that are pretty good. All you need to do is press Start and begin your conversation. Talk-to-ChatGPT is completely free to use and requires no account creation so try it out and let us know if it’s one of the best Chrome extentions you’ve used.
+
+Get Talk-to-ChatGPT
+
+17. Fancy GPT
+
+Last but not least, Fancy GPT makes its way into our list of the best ChatGPT Chrome extensions because of its design. Fancy GPT is an extension designed to beautify your ChatGPT conversations by adding different design elements to them. No matter what type of conversation you have, Fancy GPT can export them all. The extension currently supports Neon and Sketch styles and may expand to more in the future. Furthermore, it can also cover SVG path images, highlight segments of ChatGPT’s responses, and more.
+
+To use Fancy GPT, have a full conversation with the bot and then click on the extension. You will be led to another page where you can see your entire conversation in a new UI. Here, you can change the art style, exclude certain messages, and then finally export the conversation into an image or PDF. While not adding anything else to the mix, this extension is an excellent way to bring that aesthetic upgrade to your exchanges with ChatGPT.
+
+Try Fancy GPT
+
+18. ShareGPT: Share your ChatGPT Conversations
+
+While exporting your chats sounds fun, there are times when you can’t be bothered to do so much work. For those lazybums we have ShareGPT, an AI Chrome extension that lets you immediately share your conversation by the press of a button. Once installed, a small share button starts to appear in every ChatGPT conversation. Now instead of exporting a chat, all you need to do is click this button and give the extension a few seconds.
+
+ShareGPT now opens that conversation in a new tab while keeping the ChatGPT formatting intact. You can now copy this conversation’s link and share it with anyone. For those concerned about privacy, there is also a delete button that removes the conversation after a set period of time. You can even share the conversation link and record the number of viewers. For those who love to spread their ChatGPT experience, ShareGPT is a handy Chrome extension to check out.
+
+Try ShareGPT"
+16,The 12 best alternatives to ChatGPT,Interesting Engineering,1 day ago,2023-04-22 00:03:40.392322,"Discover these top 12 ChatGPT alternatives – their features, pricing, and use cases, and find the perfect AI chatbot for your needs.",https://interestingengineering.com/innovation/the-12-best-alternatives-to-chatgpt,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","In today's fast-paced digital landscape, chatbots have become popular tools for businesses and individual users – answering queries, performing tasks, providing instant support, and facilitating seamless interactions. At the forefront of this revolution is ChatGPT, an advanced AI language model developed by OpenAI, making waves in the AI sector.
+
+However, ChatGPT's skyrocketing popularity has also made it a victim of its success. The overwhelming amount of users has meant that it is often unavailable for immediate use. With the platform frequently reaching capacity, it leaves its users searching for an alternative. But fear not, for the world of AI chatbots is vast.
+
+This article delves into AI technologies by exploring the 12 best alternatives to ChatGPT. These carefully handpicked, and reviewed options offer a range of features and functionalities that may better suit the specific needs of different users.
+
+How did we choose the top 12 chatbot alternatives?
+
+With so many chatbots available, we considered various criteria to ensure we provide you with a list of the best chatbots.
+
+Our selection criteria include the following:
+
+Functionality and Features: Different AI chatbots have different features and use cases. We highlighted chatbots with unique features that set them apart and assessed how well they cater to various user needs.
+
+Different AI chatbots have different features and use cases. We highlighted chatbots with unique features that set them apart and assessed how well they cater to various user needs. Ease of Use: We ensured that all chatbots that make it to our list are user-friendly and that even a novice can harness their full potential.
+
+We ensured that all chatbots that make it to our list are user-friendly and that even a novice can harness their full potential. Integration and Customizability: We understand that the best chatbots should easily integrate with existing systems and offer customizable solutions, another fact we considered while making our list.
+
+We understand that the best chatbots should easily integrate with existing systems and offer customizable solutions, another fact we considered while making our list. Pricing and Value for Money: Last, we've considered the pricing structures and evaluated whether the chatbots deliver the best value for your hard-earned dollars.
+
+Top 12 chatbot alternatives
+
+Whether you're looking for a tool to aid your learning or boost your productivity at work, many ChatGPT alternatives are available, and you're sure to find one that checks all the boxes.
+
+And, the best part? Most of these alternatives are either free or come at a fraction of the cost.
+
+ChatSonic
+
+ChatSonic is one of the latest ChatGPT alternatives making waves in the AI chatbot world. Powered by GPT-4, OpenAI's latest and most advanced model, it has features similar to ChatGPT as well as some additional ones.
+
+What sets ChatSonic apart from ChatGPT is its ability to access the internet. It can provide users with up-to-date information and help them stay current with the latest news, trends, and insights.
+
+Features
+
+Supported by Google, its internet connectivity means it has awareness of current events (unlike ChatGPT, which stops in 2021)
+
+Powered by GPT-4 for cutting-edge AI capabilities
+
+Offers voice dictation for hands-free interaction, enabling you to interact with the chatbot using spoken prompts, much like Alexa.
+
+AI image generation
+
+Footnotes with links to sources for information verification
+
+Pros
+
+Up-to-date: Current with recent news and events
+
+Variety of use cases: Suitable for content creation, research, and more
+
+Cons
+
+Subscription cost: Pricing starts at $13 per month, scaling up to $1,749 per month, depending on the number of words needed
+
+Limited mathematical capabilities: Not ideal for solving complex math problems
+
+Usability: Web-based platform.
+
+User Reviews: Engaging and versatile, access to the Internet.
+
+Jasper AI
+
+Jasper AI, formerly known as Jarvis, is another popular ChatGPT alternative that is perfect for companies needing to generate high-quality content quickly and efficiently.
+
+You simply enter a prompt, and it will provide you with your desired content, just like ChatGPT would.
+
+What sets Jasper AI apart, however, is its extensive suite of advanced writing tools designed to produce top-notch content. Users can select from over 50 different templates, including blog posts, Twitter threads, video scripts, and more, to create their content."
+17,Chat GPT: We asked the AI bot to write articles about Oxford,Oxford Mail,1 day ago,2023-04-22 00:03:40.386757,Chat GPT is a text-based form of AI that will give an answer to any question you pose.,https://www.oxfordmail.co.uk/news/23471833.chat-gpt-asked-ai-bot-write-articles-oxford/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","ChatGPT is a text-based form of AI that will give an answer to any question you pose.
+
+Concerns have been raised that this is the future of essay writing in schools and universities.
+
+READ MORE: TV presenter Chris Packham tells council not to repeat 'wildflower fiasco'
+
+So, I thought I would give ChatGPT a try to see what it can come up with when it comes to news stories about Oxford.
+
+To start, I decided to give the AI platform a very general request.
+
+I asked it to write a breaking news story about Oxford.
+
+ChatGPT decided to write an article with the headline ‘Oxford aims for net-zero.’
+
+The piece was all about the University of Oxford revealing plans to become the world’s first net-zero carbon university by 2035.
+
+It read: “To achieve its target, Oxford plans to invest heavily in renewable energy sources, such as solar and wind power, and reduce energy consumption across its campus.
+
+ChatGPT's breaking news article about Oxford (Image: Chat GPT)
+
+“The university will also partner with organisations working on reforestation and other nature-based solutions to offset its remaining carbon emissions.”
+
+It even included a made-up quote from prominent climate activist Greta Thunberg.
+
+This was not a story that I had come across in today’s news, so I gave it a Google.
+
+The best related thing I could find was a press release from March 2021 which explained how Oxford University’s Council had voted in favour of adopting an Environmental Sustainability Strategy to get the University to net zero carbon and biodiversity net gain by 2035.
+
+READ MORE: Oxford bus operator blames lengthy delays on Botley Road closure
+
+Therefore, this was clearly a news story, but it didn’t sound like a ‘breaking’ one to me.
+
+I then asked ChatGPT to write a story about a more specific topic.
+
+I requested it to write one about the LTNs in the city.
+
+I asked ChatGPT to write a news article about LTNs (Image: Chat GPT)
+
+The bot began the article with the statement that LTNs were a ‘hotly debated’ topic.
+
+It then went on to suggest that they had been ‘implemented’ by Oxford City Council.
+
+Although the city council are responsible for maintenance of the bollards, the LTNS are actually an Oxfordshire County Council project.
+
+The article read: “Supporters of LTNs argue that they create safer, quieter, and more pleasant streets for pedestrians and cyclists, while opponents argue that they create traffic congestion and inconvenience for motorists.
+
+“Since the implementation of LTNs, the council has reported a reduction in traffic volumes, increased use of active transportation, and improvements in air quality.
+
+“However, the council has also faced criticism from some residents and business owners who say the LTNs have negatively impacted their daily routines and access to their properties.”
+
+It then included a ‘made-up’ quote from real life councillor Tom Hayes.
+
+The articles written by ChatGPT are certainly well written and contain almost perfect spelling and grammar.
+
+But I’m not convinced the articles are based on accurate facts and I wouldn’t trust the quotes that it comes up with.
+
+Therefore, I’ll be sticking with ‘old-school journalism’."
+18,GPT-4: What is it and how does it work?,XDA Developers,1 day ago,2023-04-22 00:03:40.380436,"GPT-4 is all the rage currently, powering Bing Chat and ChatGPT. But what is it and what does it offer?",https://www.xda-developers.com/gpt-4/,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","GPT-4 is the latest large multimodal model from OpenAI, and it's able to generate text from both text and graphical input. OpenAI is the company behind ChatGPT and Dall-E, and its primary research focus is in, you guessed it, artificial intelligence. Today, we're going to talk about GPT specifically, what it does, and how it contributes to a growing industry that also includes ChatGPT, Bing Chat, and Google Bard.
+
+GPT stands for Generative Pre-Trained Transformer, and GPT-4 is its fourth iteration. To understand what that means, we can break down each component individually:
+
+XDA VIDEO OF THE DAY SCROLL TO CONTINUE WITH CONTENT
+
+Generative: It generates text.
+
+It generates text. Pre-Trained: A model is trained on a large set of data to find patterns or make predictions.
+
+A model is trained on a large set of data to find patterns or make predictions. Transformer: A model that can track relationships in sequential data (like words in a sentence) that can also learn the context.
+
+In essence, it's software that can generate text by learning how text is formed by studying large amounts of data and then stringing them together based on prompts via what it knows makes sense.
+
+How does GPT-4 improve on GPT-3.5?
+
+OpenAI launched GPT-4 on March 14, 2023. According to OpenAI, there are a few key ways that GPT-4 improves on its predecessor. It can accept visual prompts to generate text and, interestingly, scores a lot higher in the uniform bar exam than GPT-3.5 in ChatGPT did (it scored in the top 10% of test makers, while GPT-3.5 scored in the bottom 10%). It's also more creative and has a larger focus on safety and preventing misinformation spread.
+
+Via OpenAI
+
+There are other performance improvements as per the company's research, including improvements in Leetcode, AP level class, and SAT results.
+
+What can GPT-4 be used for?
+
+GPT-4 is just the language model and is not synonymous with services such as ChatGPT or Bing Chat. As a result, it can be implemented into a lot of already existing systems and ones currently in development. From customer support lines to machine translation, anything that makes use of text can benefit from GPT-4. In the technical paper that outlines how GPT-4 works (and written by OpenAI), the authors also note that GPT-4 helped them to copyedit the paper, summarize text, and improve their LaTeX formatting.
+
+Currently, GPT-4 powers both Bing Chat and the version of ChatGPT that's only accessible with a ChatGPT Plus subscription. It is also accessible with a Duolingo Max subscription. The reason why GPT-4 can be a scary prospect across a lot of industries is because of just how much it can do when given a prompt. It has the potential to replace multiple jobs and improve the workflow in others. It has copyediting capabilities, can help people to program, and I've even seen it create weight loss programs. Asking it real questions will generally net you real answers, though you should still use it as a guide and fact-check the information that it gives you.
+
+What GPT-4 excels at is its reasoning capabilities. If you have to schedule a meeting and are given availability by multiple people, you can have GPT-4 find times that work for everybody by feeding it the available times. It's a simple task that people have been able to do themselves for basically forever, but it shows the reasoning and logical capabilities of GPT-4.
+
+Others have also been using GPT as an accessibility tool. People with dyslexia can use it to help write them emails or proofread their existing written content. There are so many applications for it, but it's not perfect and has many limitations.
+
+What are the limitations of GPT-4?
+
+GPT-4 is not infallible; in fact, even OpenAI states that GPT-4 sometimes suffers from ""hallucinations,"" which is just a way of saying that generates false information. Furthermore, it also states that ""care should be taken when using the outputs of GPT-4, particularly in contexts where reliability is important.""
+
+OpenAI isn't quiet about the fact that users could come to over-rely on GPT-4 for its abilities. As the technical paper details, GPT-4 ""maintains a tendency to make up facts, to double-down on incorrect information, and to perform tasks incorrectly."" It goes on to state that it does these while remaining more convincing and believable than earlier GPT models, thanks to an authoritative tone and improved accuracy in some other areas. On top of that, GPT-4 can amplify biases and perpetuate stereotypes, reinforcing social biases and worldviews.
+
+What's the future of GPT?
+
+OpenAI intends to iterate and improve on GPT-4 following its deployment as more issues are identified, and there are a few steps that the company has already committed to taking. These include:
+
+Adopt layers of mitigation in the model system: As AI models become more capable and are adopted further throughout multiple industries, the need for multiple lines of defense is critical.
+
+As AI models become more capable and are adopted further throughout multiple industries, the need for multiple lines of defense is critical. Build evaluations, mitigations, and approach development with real-world usage in mind: Learning who the users are and what these tools are going to be used for is vital in terms of mitigating any potential harm that could be done. It's especially important to account for the human element in deploying these tools and real-world vulnerabilities.
+
+Learning who the users are and what these tools are going to be used for is vital in terms of mitigating any potential harm that could be done. It's especially important to account for the human element in deploying these tools and real-world vulnerabilities. Ensure that safety assessments cover emergent risks: As models grow in their capability, preparing for complex interactions and unforeseen risks is important.
+
+As models grow in their capability, preparing for complex interactions and unforeseen risks is important. Plan for unforeseen capability jumps: Because AI is such a fast-moving industry and we don't necessarily understand everything that goes on in the ""mind"" of a trained AI model, small changes could accidentally lead to accidental capability jumps. This should be accounted for.
+
+To put it simply, OpenAI is continuing to build on GPT-4 to evolve the technology. It has the potential to be useful in a lot of applications, but it isn't perfect."
+19,ChatGPT explained: Everything you need to know about the AI chatbot,Tom's Guide,1 day ago,2023-04-22 00:03:39.872522,ChatGPT is OpenAI's popular chatbot AI. We put together a list of the most frequently asked questions about ChatGPT and answered them so you have everything...,https://www.tomsguide.com/news/chatgpt,"data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","ChatGPT has been taking the world by storm since launching in late 2022, and it is easy to see why. The revolutionary chatbot AI can do a surprising amount of tasks, from holding a conversation to writing an entire term paper. Plus, there are a lot of things you didn't know that ChatGPT can do — from making a brand logo to composing music and more.
+
+We know that lots of people are trying to figure out how to use this ChatGPT and what its limitations are. If you want to know how to use this chatbot AI check out our guide on how to use ChatGPT, as well as these tips to get the most out of ChatGPT. Here we answer all your top questions about ChatGPT.
+
+What does ChatGPT stand for?
+
+According to OpenAI (opens in new tab), ChatGPT is, ""an artificial intelligence trained to assist with a variety of tasks."" More specifically, though, it is a language model AI designed to produce human-like text and converse with people, hence the ""Chat"" in ChatGPT.
+
+Practically, this means that to use ChatGPT, you present the model with a query or request by entering it into a text box. The AI then processes this request and responds based on the information that it has available.
+
+What can you do with ChatGPT? Generate written content from news articles to novels Summarize long documents Answer questions as a research tool Write and debug code Build and text-based games Act as a tutor for homework questions or problems Plan your next vacation Create software activation keys
+
+The ""GPT"" in ChatGPT comes from GPT, the learning model that the ChatGPT application utilizes. GPT stands for Generative Pre-trained Transformer and most people are currently using GPT-3.5. This is the version of GPT that is powering the free research preview version of ChatGPT.
+
+There is a newer model as well, called GPT-4. However, this model is only available to ChatGPT Plus subscribers and developers using the GPT-4 API. This may eventually change, but for now, free users are stuck with GPT-3.5.
+
+Can you use ChatGPT for free?
+
+ChatGPT is still available to users as a free service in the research stage. Just create an account — which you can learn how to do in our guide to ChatGPT — and you're good to go.
+
+However, OpenAI has also launched ChatGPT Plus, a paid subscription service for ChatGPT. It costs $20 a month and promises access to ChatGPT even when demand is high, faster response speeds and priority access to new features when they become available. It also includes access to the new GPT-4 large language model.
+
+Despite these promises, some users have still complained about being unable to use ChatGPT due to the service being at capacity. So make sure to check out our guide to everything you need to know about ChatGPT Plus before subscribing.
+
+There's also the ChatGPT API, which developers use to integrate ChatGPT into apps. However, you can also utilize this API to do a wide range of things, including putting ChatGPT on your iPhone through a shortcut. The API is typically a pay-as-you-go product, with pricing starting as low as $0.002 per 1,000 tokens (a token is pieces of words that the chatbot uses to process prompts).
+
+Oh, and you can even get paid to use ChatGPT — though it's a full-time job. Job listings for Prompt Engineers are popping up and some pay over $300,000 a year. So if you're passionate about AI, that may be a career you wish to explore. You can also get paid to find and report ChatGPT bugs through an official bug bounty program if that's more your speed.
+
+Why did ChatGPT get banned?
+
+(Image credit: Shutterstock)
+
+Currently, ChatGPT is only banned in one country: Italy. It was banned there on March 31, 2023.
+
+For now, the ban is only temporary. According to The New York Times (opens in new tab), The Italian government issued a government order that banned ChatGPT on the grounds that OpenAI unlawfully collected personal data. There are also concerns over OpenAI not requiring an age verification system.
+
+Italian regulators have said that Italy is open to allowing ChatGPT (opens in new tab) to return as soon as April 30, 2023. OpenAI would just need to show that it has taken ""useful steps"" to address Italy's concerns.
+
+Practically, this means if you are in Italy, you cannot access ChatGPT, as OpenAI has been ordered to block internet users from Italy — though, you may be able to use a VPN to access the service.
+
+Aside from Italy, the only countries where ChatGPT is unavailable are China, Russia, North Korea and Iran, where OpenAI has declined to make the service available.
+
+However, more countries could follow suit if Eric Schmidt's latest comments are any indication. The ex-Google CEO warned of an AI 'reckoning' in a recent interview, stating that it could ultimately undermine democracy. Given what we've seen with the potential TikTok ban, that is a threat governments will probably take seriously.
+
+Can people detect if you use ChatGPT?
+
+As ChatGPT becomes more prevalent in writing, people are starting to create AI tools to detect ChatGPT or similar AI models in written content.
+
+GPTZero is one such tool, created by Princeton University student Edward Tian. According to NPR (opens in new tab), GPTZero uses “perplexity” and “burstiness” scores to measure the complexity of text. GPTZero was able to differentiate between an article from The New Yorker and a LinkedIn post written by ChatGPT, so there’s some early evidence that it works at detecting the use of ChatGPT.
+
+The theory behind these tools is that humans write in a way that is more complex than content written by other AI. We even tested whether ChatGPT will steal our jobs and all four of our staff testers were able to tell what reviews were written by humans and which were written by ChatGPT. You can try and teach ChatGPT your writing style, but even then it could still be detected.
+
+Additionally, ChatGPT can plagiarize without you knowing. Since ChatGPT pulls data from all over the internet and beyond as part of its model training, it pulls in data is not considered common knowledge. If you include something in a written work and it is not considered common knowledge or you are not the primary source, you need to cite it to avoid plagiarism. While the chatbot can provide quotes, and in some cases even fool plagiarism checkers (opens in new tab), you need to be vigilant when using the chatbot to avoid plagiarism.
+
+Is there a ChatGPT app?
+
+(Image credit: Shutterstock)
+
+There is no app for ChatGPT at the moment.
+
+However, there is a wide range of integrations, including those with some popular apps. Microsoft in particular has led the way, integrating the GPT-4 model powering ChatGPT Plus into Microsoft's Bing search engine, and then taking that new chatbot and integrating it further into mobile apps like Edge, Bing and Skype.
+
+There are also ways to get ChatGPT on your Windows PC, though they aren't officially endorsed by Microsoft. By using Microsoft Powertoys, you can get ChatGPT directly on Windows 11 without needing to use a web browser.
+
+But there are also other apps using ChatGPT. Snapchat now has My AI, which is ChatGPT integrated into the popular messaging app. Opera has also integrated ChatGPT into its web browsers, allowing users to summarize articles and web pages, generate social media posts and more, with just a prompt or click. Even Slack has integrated ChatGPT into Slack's app. But none of these is a standalone ChatGPT app.
+
+So be careful of apps claiming to be ChatGPT apps. Fake ChatGPT apps are spreading malware that can steal your money and passwords. If you want to use ChatGPT on your phone, you can either do it through your mobile browser or use an iOS shortcut that allows you to use ChatGPT with Siri.
+
+ChatGPT-3 vs ChatGPT-4
+
+With the launch of GPT-4, a lot of people have been wondering what differences there are between ChatGPT and GPT-4. The terminology can even be confusing, with terms like ChatGPT-3 and ChatGPT-4 — and now ChatGPT-5 — being thrown around. So first, let's cover the different terminology.
+
+OpenAI has been around since 2015 and has been working on the GPT model behind ChatGPT for most of that time. Then in late 2022, they launched ChatGPT, the popular chatbot that we've now become so familiar with. This ChatGPT chatbot was powered by GPT-3.5, an updated version of the GPT-3 model that was the third iteration of the GPT large language model.
+
+So if anyone mentions ChatGPT, ChatGPT-3, ChatGPT-3.5 or GPT-3.5, they are talking about the free version of ChatGPT and/or the language model powering it.
+
+(Image credit: OpenAI)
+
+Then there is GPT-4, which is the latest version of the GPT model. Sometimes referred to as ChatGPT-4, this model launched in March 2023 and is an upgraded version of ChatGPT. Currently, only those with ChatGPT Plus or developers with access to the ChatGPT API (more on that later) have access to this new model. However, it has powered the ChatGPT integrations in other apps such as the new Bing with ChatGPT, so while most people don't have direct access to ChatGPT-4, you could be using it in other apps.
+
+But what does this mean practically? In short, GPT-4 is a massive leap forward. It processes things faster, can process more lines of text and can even process images and provide context on those images. However, there are hacks that can be used to get around ChatGPT-3.5's limits, such as using ""Shogtongue,"" a language that ChatGPT created to allow conversations to go on longer than the 8,000-word limit.
+
+GPT-4's ability to handle both text and images is called multimodal functionality, and if you ever read someone talking about that, they are talking about ChatGPT-4. ChatGPT-3 and ChatGPT-3.5 are text-based only — even though you can use the text code provided by ChatGPT to create images and 3D models.
+
+So to sum this all up, ChatGPT (aka ChatGPT-3) can take in text input and create text outputs. It's powered by GPT-3.5. ChatGPT-4 (aka GPT-4) is an upgraded version that is much more powerful and can also handle images as inputs but is limited to ChatGPT Plus users and developers.
+
+What is ChatGPT 5?
+
+ChatGPT-5 — or GPT-5 — is the rumored next version of ChatGPT's GPT model. It was rumored to be ready around December 2023, but that rumor has since been debunked. At an MIT event (opens in new tab), OpenAI founder Sam Altman said that OpenAI is not working on GPT-5 and ""won't be for some time."" Regardless of when it's coming, we still don't know much about it yet.
+
+The one thing we have heard rumored though is that ChatGPT-5 could achieve artificial general intelligence (AGI). This means it could pass the Turing test, which is a test that determines if a computer can communicate in a manner that is indistinguishable from a human.
+
+This could be a revolutionary step forward or a step too far depending on who you ask. Several tech leaders have called on ChatGPT and Google Bard to halt AI training out of concerns for safety. OpenAI seems to show no desire to stop training ChatGPT, however, so time will tell whether ChatGPT-5 brings about a scenario where the machines rise up and take over or merely becomes an incredibly powerful AI tool.
+
+What is the ChatGPT API?
+
+(Image credit: Salesforce)
+
+Throughout this article, you've heard mention of the ChatGPT API. An API, or application programming interface, is a tool that developers can use to integrate ChatGPT into their own apps.
+
+This has already led to a variety of applications, including the Amazfit GTR4 smartwatch, which claims to take the capabilities of ChatGPT's AI model and put it in a smartwatch. Snapchat's My AI and the Slack ChatGPT app are both prime examples of the ChatGPT API in use, but there are many more.
+
+So if you're using an application that has ChatGPT features built in, that is likely the ChatGPT API. The one thing to note here is that the ChatGPT API uses GPT-4 rather than GPT-3.5, so apps using the ChatGPT API could be more powerful and have greater functionality than the free version of ChatGPT.
+
+One final note: the ChatGPT API is different from ChatGPT plugins. The API brings ChatGPT's tools to other sites, whereas the ChatGPT plugins take other sites and add their functionality into ChatGPT.
+
+One example is Expedia's planned ChatGPT plugin, which would allow you to ask ChatGPT to plan a vacation and ChatGPT would pull from Expedia to help you do things like book flights and hotels.
+
+OpenAI has admitted that there may be safety concerns with these plugins but they are implementing precautions and transactional information. For example, purchases will be kept separate from the plugin. Keep an eye out for new plugins coming to more and more of your favorite sites.
+
+If you want to access ChatGPT plugins check out how to use ChatGPT web plugins. The plugins aren't widely available to everyone just yet so join the waiting list if you're interested.
+
+ChatGPT alternatives
+
+(Image credit: Shutterstock/Rokas Tenys)
+
+There are quite a few ChatGPT alternatives, but the biggest competitor has to be Google Bard. Bard is similar to ChatGPT in that it is a chatbot that can answer complex questions, generate content like poems and emails and help you plan a party or vacation. And with a recent update, Bard can even write and debug code in over 20 programming languages from C++ to Python. However, Bard is a standalone tool right now that is separate from Google Search, although it may be integrated in the future.
+
+
+
+Google is also reportedly heavily invested in Anthropic, a rival to OpenAI. Google is said to have invested $400 million in Anthropic and could unveil Anthropic's language model — Claude — in the coming months.
+
+And now there are reports that Google is working on Magi, a next-generation search engine powered by AI. While the full search engine may not debut for some time, it's expected that we will see some Magi features get integrated into existing Google products as soon as Google I/O 2023.
+
+Aside from what Google is working on, there is also You.com's AI chatbot, which is a multimodal search engine with chatbot functionality. It's not bad as a search engine, but it lacks the capabilities of ChatGPT when it comes to content creation or coding. For those in China, Alibaba has also unveiled its ChatGPT competitor called Tongyi Qianwen and Baidu has its own chatbot called Ernie.
+
+On the more novel side, Stability AI — the company behind the AI image generator Stable Diffusion — has launched its own open source ChatGPT competitor called StableLM. It's not as well-trained but the potential is something to keep an eye on. For something on the whimsical side, there's CatGPT, which is ChatGPT but with the chatbot responding as a cat.
+
+And if none of that appeals to you, you could always just wait and see what Elon does. The Twitter and Tesla CEO is rumored to be working on his own AI chatbot through the company X.AI that he founded back on March 9, 2023.
+
+But the most interesting ChatGPT alternative might be Auto-GPT, which is a version of ChatGPT that uses a Python environment to automate a lot of the follow-up prompts required to get the best response from ChatGPT. It takes a bit of expertise to work, but the efficiency it provides is well worth it.
+
+What is Bing with ChatGPT?
+
+(Image credit: Tom's Guide)
+
+Aside from the ChatGPT alternatives above, there is also ""the new Bing"" — or Bing with ChatGPT.
+
+Bing with ChatGPT was announced at a Microsoft event on February 7, 2023. and it is closer to a GPT-powered search engine than a ChatGPT competitor. It is powered by the same GPT model that powers ChatGPT, though it uses GPT-4 rather than GPT-3.5
+
+We were initially impressed with its potential but as we've spent extended time with the Microsoft chatbot issues crop up. Sometimes we even wonder how can ChatGPT be the next big thing if it's already breaking when pushed beyond basic requests. It often gets the basic stuff wrong at a surprising rate — though this happens with chatbot AI more than you'd think.
+
+Despite this, the new Bing seems to be a winning strategy for Microsoft. The company says that since the new Bing was unveiled in February, it took less than a month for Bing usage to swell to over 100 million daily active users. It will be interesting to see if that active user number increases as ChatGPT search results become more prevalent in Bing. This success already reportedly to has Samsung questioning if it needs to ditch Google for Bing on its Galaxy phones.
+
+The GPT-powered Bing is currently available only through a waitlist, though it seems that Microsoft is making Bing with ChatGPT available to everyone. Joining the waitlist will now give you immediate access — though only on the Edge browser. And as of February 22, Microsoft's new Bing chatbot is also available on the iOS and Android Bing, Edge and Skype apps. It also added Bing with ChatGPT on its SwiftKey keyboard on Android and even SwiftKey for iPhone. The only catch? You'll still need access to the new Bing to gain access to its features in these apps.
+
+If you do have access to Bing with ChatGPT, make sure to check out our guide to nine practical uses of Bing with ChatGPT. It's a great tool for using the chatbot for things it's actually good at.
+
+For more on how Microsoft's Bing with ChatGPT compares against another AI — Google Bard — check out our Bing with ChatGPT vs Google Bard face-off.
+
+Why is ChatGPT at capacity?
+
+ChatGPT has constraints in terms of how much it can process at once, so it throttles the number of users that can access it at any given time.
+
+This is the most common reason that it will not work — if ChatGPT is at capacity, it will not let you log in. One of the big selling points of ChatGPT Plus mentioned earlier is priority access to ensure you don't encounter this issue, though ChatGPT Plus users have still reported getting the error message that ChatGPT is at capacity.
+
+However, ChatGPT could get increased bandwidth if Microsoft is successful in building its own AI chip. Microsoft has been reportedly working on its own AI chip for some time, and it is hoping that it can be mass-produced as soon as 2024. If successful, these chips could power the Azure supercomputers that power ChatGPT, and could greatly alleviate bandwidth bottlenecks.
+
+Aside from this roadblock, ChatGPT can still suffer from technical errors like any other site or app. It can have server errors preventing it from working, or if you have a poor internet connection you may struggle to use it successfully.
+
+Is ChatGPT safe?
+
+(Image credit: NurPhoto/Getty)
+
+This is a complicated question. In one sense, yes, ChatGPT is safe. If you log into your OpenAI account and use it, it won’t install anything malicious onto your device.
+
+However, you still need to be concerned about OpenAI suffering a data breach and exposing your personal data, which is a risk with any online account. We've already seen that happen to a small number of ChatGPT Plus users who were affected by a bug that exposed ""user’s first and last name, email address, payment address, the last four digits (only) of a credit card number, and credit card expiration date."" While only a small percentage of users were affected, this shows that OpenAI still suffers from the same security risks as any website.
+
+Speaking of bugs, OpenAI has introduced its own Bug Bounty Program, challenging users and ethical hackers to report any issues they find, with some potentially big money rewards, up to $20,000. This will hopefully see ChatGPT become more secure than ever before.
+
+On top of account safety concerns, you need to be conscious of what data you put into ChatGPT regardless of your account type. According to OpenAI’s ChatGPT FAQs article, ChatGPT does save your conversations and they are reviewed by OpenAI for training purposes. Recently a bug caused those conversation histories to be visible to other users, forcing ChatGPT to disable the feature for a short time. Samsung also found out that ChatGPT stores your data the hard way, as it accidentally leaked its secrets to ChatGPT multiple times by using ChatGPT to optimize tests for its chips, among other things.
+
+If you want to delete your data, you’ll have to delete your entire account, which is irreversible. To do so, just go to this OpenAI help page and follow the instructions.
+
+Additionally, with AI there are deeper ethical and moral concerns — especially since the AI model has neither ethics nor morals. As Bleeping Computer (opens in new tab) lays out, ChatGPT can be unknowingly offensive in its responses, breed misinformation, write phishing emails, be sexist, racist, etc. Because the AI model pulls information from the internet and other sources to form its knowledge base, it can potentially pull the harmful stuff without knowing that it's harmful. So just be mindful of this lack of safeguards when using the service.
+
+Finally, there are some mental health safety concerns with using AI that can sometimes go off the rails. Some AI experts have proposed digital health warnings for chatbot AI like ChatGPT and even Apple appears to be banning apps using the ChatGPT API over safety concerns.
+
+Oh, and don't forget DAN (AKA Do Anything Now). DAN is the alias for the jailbroken version of the chatbot, some are describing it as ChatGPT's evil twin. Not approved by OpenAI, DAN is essentially ChatGPT being tricked into assuming a persona that bypasses its terms of service in order to respond to prompts asking it unethical, violent or offensive questions. OpenAI is working constantly to stop DAN from being accessed and if you use it, you do so at your own risk.
+
+And while ChatGPT wasn't used in this instance, a recent fake kidnapping where AI faked a daughter's voice to extort her mother highlighted the dangers of AI beyond these chatbots. So while ChatGPT is by no means malicious content, calling AI as a whole ""safe"" may be a bridge too far."
